@@ -5,3 +5,5 @@ node_modules/
 .vercel/
 # converted outputs, regenerable from raw/ + axz-wab-source/scripts/assets
 derived/
+# written by the Vercel CLI on link; holds a token
+.env.local
