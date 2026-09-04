@@ -1,0 +1,5 @@
+# approved originals, re-fetchable from manifests/
+raw/
+node_modules/
+.DS_Store
+.vercel/

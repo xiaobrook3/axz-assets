@@ -1,0 +1,9 @@
+[
+  {
+    "id": "uv-probe",
+    "author": "Brook Xiao",
+    "license": "authored",
+    "source": "authored: axz-wab-source/scripts/assets/make-probe.mjs",
+    "phase": "0"
+  }
+]
