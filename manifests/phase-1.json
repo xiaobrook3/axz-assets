@@ -220,7 +220,6 @@
       "id": "tex-blue-metal-plate",
       "kind": "texture",
       "file": "textures/blue_metal_plate/",
-      "derived": true,
       "source": "https://polyhaven.com/a/blue_metal_plate",
       "license": "CC0-1.0",
       "author": "Poly Haven",
@@ -242,13 +241,14 @@
       "fetchedOn": "2026-09-04",
       "bytes": 16535683,
       "files": 4,
-      "sha256": "841e59672646254bfcaec0633905ec08ceae520f1324e1a6425aa5ef45b3687a"
+      "sha256": "841e59672646254bfcaec0633905ec08ceae520f1324e1a6425aa5ef45b3687a",
+      "publish": false,
+      "note": "input to the authored skin; credited, never served as-is"
     },
     {
       "id": "tex-metal-plate",
       "kind": "texture",
       "file": "textures/metal_plate/",
-      "derived": true,
       "source": "https://polyhaven.com/a/metal_plate",
       "license": "CC0-1.0",
       "author": "Poly Haven",
@@ -271,13 +271,14 @@
       "fetchedOn": "2026-09-04",
       "bytes": 14024685,
       "files": 5,
-      "sha256": "79b298c0083af8128990ac57cb1629de29460b2b536c3b2135ee127a6475e8b9"
+      "sha256": "79b298c0083af8128990ac57cb1629de29460b2b536c3b2135ee127a6475e8b9",
+      "publish": false,
+      "note": "input to the authored skin; credited, never served as-is"
     },
     {
       "id": "tex-metal049a",
       "kind": "texture",
       "file": "textures/Metal049A/",
-      "derived": true,
       "source": "https://ambientcg.com/view?id=Metal049A",
       "license": "CC0-1.0",
       "author": "ambientCG",
@@ -294,13 +295,14 @@
       "fetchedOn": "2026-09-04",
       "bytes": 7188932,
       "files": 1,
-      "sha256": "7c9da1f87d9c22306587e428db740e9db7119817af67d04d3b68cd33776511b2"
+      "sha256": "7c9da1f87d9c22306587e428db740e9db7119817af67d04d3b68cd33776511b2",
+      "publish": false,
+      "note": "input to the authored skin; credited, never served as-is"
     },
     {
       "id": "tex-metal032",
       "kind": "texture",
       "file": "textures/Metal032/",
-      "derived": true,
       "source": "https://ambientcg.com/view?id=Metal032",
       "license": "CC0-1.0",
       "author": "ambientCG",
@@ -317,7 +319,9 @@
       "fetchedOn": "2026-09-04",
       "bytes": 13036124,
       "files": 1,
-      "sha256": "4b8884843c490963d5734be036c35639d064e7a817eb61145322f69c6c19895a"
+      "sha256": "4b8884843c490963d5734be036c35639d064e7a817eb61145322f69c6c19895a",
+      "publish": false,
+      "note": "input to the authored skin; credited, never served as-is"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "builtAt": "2026-09-04T18:55:47.249Z",
+  "builtAt": "2026-09-04T23:07:09.219Z",
   "origin": "https://axz-assets.vercel.app",
   "assets": {
     "uv-probe": {
@@ -11,15 +11,267 @@
       "license": "authored",
       "author": "Brook Xiao",
       "source": "authored: axz-wab-source/scripts/assets/make-probe.mjs"
+    },
+    "b738-fg": {
+      "kind": "model",
+      "url": "models/b738-fg.5ab89958.glb",
+      "bytes": 3933820,
+      "sha256": "5ab899586128537c6f3c68a514f5e47acf9ba05e3d60c3de0fe42c3c764e4e48",
+      "sourceSha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
+      "license": "GPL-2.0-or-later",
+      "author": "FlightGear 737-800 authors (README in the package)",
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "types": [
+        "b-737x",
+        "b-1717",
+        "b-0001f"
+      ],
+      "part": "cockpit+exterior-fallback"
+    },
+    "draco-wrapper": {
+      "kind": "decoder",
+      "url": "decoders/draco_wasm_wrapper.8bb2952d.js",
+      "bytes": 58456,
+      "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6",
+      "license": "Apache-2.0",
+      "author": "Google (Draco)",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js"
+    },
+    "draco-wasm": {
+      "kind": "decoder",
+      "url": "decoders/draco_decoder.a680d927.wasm",
+      "bytes": 192420,
+      "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+      "license": "Apache-2.0",
+      "author": "Google (Draco)",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm"
+    },
+    "draco-js": {
+      "kind": "decoder",
+      "url": "decoders/draco_decoder.8625489d.js",
+      "bytes": 512465,
+      "sha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f",
+      "license": "Apache-2.0",
+      "author": "Google (Draco)",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js"
+    },
+    "basis-js": {
+      "kind": "decoder",
+      "url": "decoders/basis_transcoder.8478b5b6.js",
+      "bytes": 57529,
+      "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1",
+      "license": "Apache-2.0",
+      "author": "Binomial (Basis Universal)",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js"
+    },
+    "basis-wasm": {
+      "kind": "decoder",
+      "url": "decoders/basis_transcoder.6cf17dc8.wasm",
+      "bytes": 527333,
+      "sha256": "6cf17dc889352c42e9acf8897107978d127005fe3386c36a0e3845e27967630a",
+      "license": "Apache-2.0",
+      "author": "Binomial (Basis Universal)",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm"
     }
   },
   "credits": [
     {
       "id": "uv-probe",
+      "title": "uv-probe",
       "author": "Brook Xiao",
+      "authorUrl": "",
       "license": "authored",
       "source": "authored: axz-wab-source/scripts/assets/make-probe.mjs",
+      "modified": "",
       "phase": "0"
+    },
+    {
+      "id": "b738-fg",
+      "title": "FlightGear 737-800 (cockpit.ac, flightdesk.ac, pedestal.ac, oh-panel.ac, pedals.ac; 737-800.ac, LWing/RWing/HorzStab/VertStab, nosegear, winglet)",
+      "author": "FlightGear 737-800 authors (README in the package)",
+      "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "license": "GPL-2.0-or-later",
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "1"
+    },
+    {
+      "id": "draco-wrapper",
+      "title": "Draco WASM wrapper",
+      "author": "Google (Draco)",
+      "authorUrl": "https://github.com/google/draco",
+      "license": "Apache-2.0",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js",
+      "modified": "",
+      "phase": "1"
+    },
+    {
+      "id": "draco-wasm",
+      "title": "Draco decoder (wasm)",
+      "author": "Google (Draco)",
+      "authorUrl": "https://github.com/google/draco",
+      "license": "Apache-2.0",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm",
+      "modified": "",
+      "phase": "1"
+    },
+    {
+      "id": "draco-js",
+      "title": "Draco decoder (js fallback)",
+      "author": "Google (Draco)",
+      "authorUrl": "https://github.com/google/draco",
+      "license": "Apache-2.0",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js",
+      "modified": "",
+      "phase": "1"
+    },
+    {
+      "id": "basis-js",
+      "title": "Basis Universal transcoder (js)",
+      "author": "Binomial (Basis Universal)",
+      "authorUrl": "https://github.com/BinomialLLC/basis_universal",
+      "license": "Apache-2.0",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js",
+      "modified": "",
+      "phase": "1"
+    },
+    {
+      "id": "basis-wasm",
+      "title": "Basis Universal transcoder (wasm)",
+      "author": "Binomial (Basis Universal)",
+      "authorUrl": "https://github.com/BinomialLLC/basis_universal",
+      "license": "Apache-2.0",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm",
+      "modified": "",
+      "phase": "1"
+    },
+    {
+      "id": "tex-blue-metal-plate",
+      "title": "Blue Metal Plate (4K: diffuse, roughness, normal GL, AO)",
+      "author": "Poly Haven",
+      "authorUrl": "https://polyhaven.com",
+      "license": "CC0-1.0",
+      "source": "https://polyhaven.com/a/blue_metal_plate",
+      "modified": "",
+      "phase": "1",
+      "published": false
+    },
+    {
+      "id": "tex-metal-plate",
+      "title": "Metal Plate (2K: diffuse, roughness, normal GL, metalness, AO)",
+      "author": "Poly Haven",
+      "authorUrl": "https://polyhaven.com",
+      "license": "CC0-1.0",
+      "source": "https://polyhaven.com/a/metal_plate",
+      "modified": "",
+      "phase": "1",
+      "published": false
+    },
+    {
+      "id": "tex-metal049a",
+      "title": "Metal 049 A (2K JPG set)",
+      "author": "ambientCG",
+      "authorUrl": "https://ambientcg.com",
+      "license": "CC0-1.0",
+      "source": "https://ambientcg.com/view?id=Metal049A",
+      "modified": "",
+      "phase": "1",
+      "published": false
+    },
+    {
+      "id": "tex-metal032",
+      "title": "Metal 032 (2K JPG set)",
+      "author": "ambientCG",
+      "authorUrl": "https://ambientcg.com",
+      "license": "CC0-1.0",
+      "source": "https://ambientcg.com/view?id=Metal032",
+      "modified": "",
+      "phase": "1",
+      "published": false
+    },
+    {
+      "id": "a32x-fg",
+      "title": "FlightGear A320-family (A320-200 variants; flight deck shared with the A321)",
+      "author": "legoboyvdlp, Octal450, merspieler and the A320-family contributors (AUTHORS in the repo)",
+      "authorUrl": "https://github.com/legoboyvdlp/A320-family",
+      "license": "GPL-2.0-or-later",
+      "source": "https://github.com/legoboyvdlp/A320-family",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4",
+      "published": false
+    },
+    {
+      "id": "b744-fg",
+      "title": "FlightGear 747-400 (flight deck)",
+      "author": "FlightGear 747-400 authors (README in the package)",
+      "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/747-400/",
+      "license": "GPL-2.0-or-later",
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/747-400/",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4",
+      "published": false
+    },
+    {
+      "id": "c172-fg",
+      "title": "FlightGear Cessna 172P",
+      "author": "the c172p team (AUTHORS in the repo)",
+      "authorUrl": "https://github.com/c172p-team/c172p",
+      "license": "GPL-2.0-or-later",
+      "source": "https://github.com/c172p-team/c172p",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4",
+      "published": false
+    },
+    {
+      "id": "conc-fg",
+      "title": "FlightGear Concorde",
+      "author": "FlightGear Concorde authors (Models/ReadmeModel.txt)",
+      "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/Concorde/",
+      "license": "GPL-2.0-or-later",
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/Concorde/",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4",
+      "published": false
+    },
+    {
+      "id": "f16-fg",
+      "title": "FlightGear F-16",
+      "author": "Nikolai V. Chr. and the f16 contributors (AUTHORS in the repo)",
+      "authorUrl": "https://github.com/NikolaiVChr/f16",
+      "license": "GPL-2.0-or-later",
+      "source": "https://github.com/NikolaiVChr/f16",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4",
+      "published": false
+    },
+    {
+      "id": "f35-fg",
+      "title": "FlightGear F-35B (Cockpit.ac)",
+      "author": "FlightGear F-35B authors (README in the repo)",
+      "authorUrl": "https://github.com/FGMEMBERS/F-35B",
+      "license": "GPL-3.0-or-later",
+      "source": "https://github.com/FGMEMBERS/F-35B",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4",
+      "published": false
     }
+  ],
+  "pending": [
+    "b738-exterior",
+    "b738-exterior-alt",
+    "a32x-fg (not built)",
+    "a321-exterior",
+    "b744-exterior",
+    "b744-fg (not built)",
+    "b789-exterior",
+    "c172-fg (not built)",
+    "conc-fg (not built)",
+    "g650-exterior",
+    "f16-fg (not built)",
+    "f22-exterior",
+    "f35-exterior",
+    "f35-fg (not built)",
+    "b2-exterior",
+    "b52-exterior"
   ]
 }
