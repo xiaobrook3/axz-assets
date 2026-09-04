@@ -89,7 +89,7 @@
       "evidence": "a complete modelled 737 flight deck; the exterior is split by part with FlightGear animation XML, which makes it the rigged fallback exterior",
       "concerns": "GPL (D16); displays are FlightGear canvases, replaced by ours; 2010s textures re-authored",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-      "fetched": false,
+      "fetched": true,
       "fetch": [
         {
           "type": "svn-dir",
@@ -102,15 +102,19 @@
         },
         {
           "type": "url",
-          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/README",
-          "into": "models/b738-fg/raw/README"
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/README.md",
+          "into": "models/b738-fg/raw/README.md"
         },
         {
           "type": "url",
-          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/COPYING",
-          "into": "models/b738-fg/raw/COPYING"
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/LICENSE",
+          "into": "models/b738-fg/raw/LICENSE"
         }
-      ]
+      ],
+      "fetchedOn": "2026-09-04",
+      "bytes": 11284778,
+      "files": 121,
+      "sha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad"
     },
     {
       "id": "draco-wrapper",
@@ -122,11 +126,15 @@
       "authorUrl": "https://github.com/google/draco",
       "title": "Draco WASM wrapper",
       "format": "js",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "url",
         "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 58456,
+      "files": 1,
+      "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6"
     },
     {
       "id": "draco-wasm",
@@ -138,11 +146,15 @@
       "authorUrl": "https://github.com/google/draco",
       "title": "Draco decoder (wasm)",
       "format": "wasm",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "url",
         "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 192420,
+      "files": 1,
+      "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac"
     },
     {
       "id": "draco-js",
@@ -154,11 +166,15 @@
       "authorUrl": "https://github.com/google/draco",
       "title": "Draco decoder (js fallback)",
       "format": "js",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "url",
         "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 512465,
+      "files": 1,
+      "sha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f"
     },
     {
       "id": "basis-js",
@@ -170,11 +186,15 @@
       "authorUrl": "https://github.com/BinomialLLC/basis_universal",
       "title": "Basis Universal transcoder (js)",
       "format": "js",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "url",
         "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 57529,
+      "files": 1,
+      "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1"
     },
     {
       "id": "basis-wasm",
@@ -186,11 +206,15 @@
       "authorUrl": "https://github.com/BinomialLLC/basis_universal",
       "title": "Basis Universal transcoder (wasm)",
       "format": "wasm",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "url",
         "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 527333,
+      "files": 1,
+      "sha256": "6cf17dc889352c42e9acf8897107978d127005fe3386c36a0e3845e27967630a"
     },
     {
       "id": "tex-blue-metal-plate",
@@ -204,7 +228,7 @@
       "title": "Blue Metal Plate (4K: diffuse, roughness, normal GL, AO)",
       "format": "jpg 4K → re-encoded KTX2/WebP tiles for the authored skin",
       "use": "painted, scratched sheet: base for painted-aluminium roughness and normal detail",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "urls",
         "into": "textures/blue_metal_plate",
@@ -214,7 +238,11 @@
           "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/blue_metal_plate/blue_metal_plate_nor_gl_4k.jpg",
           "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/blue_metal_plate/blue_metal_plate_ao_4k.jpg"
         ]
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 16535683,
+      "files": 4,
+      "sha256": "841e59672646254bfcaec0633905ec08ceae520f1324e1a6425aa5ef45b3687a"
     },
     {
       "id": "tex-metal-plate",
@@ -228,7 +256,7 @@
       "title": "Metal Plate (2K: diffuse, roughness, normal GL, metalness, AO)",
       "format": "jpg 2K → tiles",
       "use": "bare/painted plate: normal detail for panels and fasteners",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "urls",
         "into": "textures/metal_plate",
@@ -239,7 +267,11 @@
           "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_metal_2k.jpg",
           "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_ao_2k.jpg"
         ]
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 14024685,
+      "files": 5,
+      "sha256": "79b298c0083af8128990ac57cb1629de29460b2b536c3b2135ee127a6475e8b9"
     },
     {
       "id": "tex-metal049a",
@@ -253,12 +285,16 @@
       "title": "Metal 049 A (2K JPG set)",
       "format": "zip of 2K jpg maps → tiles",
       "use": "clean silver aluminium: bare-metal leading edges, engine inlets",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "url",
         "url": "https://ambientcg.com/get?file=Metal049A_2K-JPG.zip",
         "into": "textures/Metal049A/Metal049A_2K-JPG.zip"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 7188932,
+      "files": 1,
+      "sha256": "7c9da1f87d9c22306587e428db740e9db7119817af67d04d3b68cd33776511b2"
     },
     {
       "id": "tex-metal032",
@@ -272,12 +308,16 @@
       "title": "Metal 032 (2K JPG set)",
       "format": "zip of 2K jpg maps → tiles",
       "use": "grey smooth metal: nacelles, gear legs",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "url",
         "url": "https://ambientcg.com/get?file=Metal032_2K-JPG.zip",
         "into": "textures/Metal032/Metal032_2K-JPG.zip"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 13036124,
+      "files": 1,
+      "sha256": "4b8884843c490963d5734be036c35639d064e7a817eb61145322f69c6c19895a"
     }
   ]
 }

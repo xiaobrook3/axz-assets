@@ -98,8 +98,8 @@
         },
         {
           "type": "url",
-          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/747-400/README",
-          "into": "models/b744-fg/raw/README"
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/747-400/COPYING",
+          "into": "models/b744-fg/raw/COPYING"
         }
       ]
     },
@@ -176,7 +176,7 @@
       "derived": true,
       "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/Concorde/",
       "license": "GPL-2.0-or-later",
-      "author": "FlightGear Concorde authors (ReadmeModel.txt in Models/)",
+      "author": "FlightGear Concorde authors (Models/ReadmeModel.txt)",
       "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/Concorde/",
       "title": "FlightGear Concorde",
       "format": ".ac (AC3D) + PNG → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
@@ -193,11 +193,6 @@
           "exclude": [
             "Liveries/"
           ]
-        },
-        {
-          "type": "url",
-          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/Concorde/README",
-          "into": "models/conc-fg/raw/README"
         }
       ]
     },
