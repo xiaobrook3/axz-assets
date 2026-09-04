@@ -1,0 +1,418 @@
+{
+  "phase": "4",
+  "approvedBy": "Brook Xiao",
+  "approvedOn": "2026-09-04",
+  "note": "Phase 4 = the rest of the fleet, primaries only (fallbacks stay in proposals/fleet.json and are promoted here only if a primary fails inspection). Order of use follows spec D7: Concorde → 747-400 → F-22 → A321, then the rest. FlightGear rows are GPL (D16): the converted glTF and the converter are published under the GPL in this public repo; each aircraft's authors are credited from its own README/AUTHORS. The hangar's H145 stays procedural.",
+  "rows": [
+    {
+      "id": "a32x-fg",
+      "types": [
+        "b-321x",
+        "a320"
+      ],
+      "part": "exterior+cockpit",
+      "kind": "model",
+      "file": "models/a32x-fg/a32x-fg.glb",
+      "derived": true,
+      "source": "https://github.com/legoboyvdlp/A320-family",
+      "license": "GPL-2.0-or-later",
+      "author": "legoboyvdlp, Octal450, merspieler and the A320-family contributors (AUTHORS in the repo)",
+      "authorUrl": "https://github.com/legoboyvdlp/A320-family",
+      "title": "FlightGear A320-family (A320-200 and A321 variants)",
+      "format": ".ac (AC3D) + PNG/DDS → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "estimatedBytes": "Models/ ≈ 60 MB",
+      "evidence": "the flagship Airbus of the open-source sim, updated 2026-08-22; A318/A319/A320/A321 fuselage variants in one package",
+      "concerns": "GPL; .ac conversion; FlightGear canvas displays replaced by ours",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "fetched": false,
+      "fetch": {
+        "type": "git-sparse",
+        "repo": "https://github.com/legoboyvdlp/A320-family.git",
+        "paths": [
+          "Models",
+          "AUTHORS",
+          "COPYING",
+          "README.md"
+        ],
+        "into": "models/a32x-fg/raw"
+      }
+    },
+    {
+      "id": "b744-exterior",
+      "types": [
+        "b744"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/b744-exterior/b744-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/boeing-747-400-airplane-8c9c02b847344841adaa43c9ffe707a8",
+      "license": "CC-BY-4.0",
+      "author": "LDawesome",
+      "authorUrl": "https://sketchfab.com/LDawesome",
+      "title": "Boeing 747-400 airplane",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 4988979,
+      "faces": 295170,
+      "textures": "2 at 4096",
+      "published": "2023-10-05",
+      "evidence": "'noai' tag, 5 materials, blank finish",
+      "concerns": "127 downloads; two textures for a 747 means most detail is geometry",
+      "modified": "repainted, rigged, Draco, KTX2",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/b744-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "PRIMARY exterior"
+    },
+    {
+      "id": "b744-fg",
+      "types": [
+        "b744"
+      ],
+      "part": "cockpit",
+      "kind": "model",
+      "file": "models/b744-fg/b744-fg.glb",
+      "derived": true,
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/747-400/",
+      "license": "GPL-2.0-or-later",
+      "author": "FlightGear 747-400 authors (README in the package)",
+      "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/747-400/",
+      "title": "FlightGear 747-400 (flight deck)",
+      "format": ".ac (AC3D) + PNG → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "estimatedBytes": "Models/ ≈ 8 MB",
+      "evidence": "a modelled 747 flight deck for the yoke-glass family",
+      "concerns": "2000s textures re-authored",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "fetched": false,
+      "fetch": [
+        {
+          "type": "svn-dir",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/747-400/Models/",
+          "into": "models/b744-fg/raw/Models",
+          "exclude": [
+            "Liveries/"
+          ]
+        },
+        {
+          "type": "url",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/747-400/README",
+          "into": "models/b744-fg/raw/README"
+        }
+      ]
+    },
+    {
+      "id": "b789-exterior",
+      "types": [
+        "b789"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/b789-exterior/b789-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/boeing-787-9-singapore-airlines-d383b7e3b858407e8cff7365820cc4dd",
+      "license": "CC-BY-4.0",
+      "author": "mudkipz321",
+      "authorUrl": "https://sketchfab.com/mudkipz321",
+      "title": "Boeing 787-9 Singapore Airlines",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 7812737,
+      "faces": 444420,
+      "textures": "10 at 4096",
+      "published": "2021-03-12",
+      "evidence": "'Designed in blender, created for a friend'; 6,057 downloads, 158 likes; re-uploaded by three other accounts, which marks this as the original",
+      "concerns": "Singapore Airlines livery: the livery texture is replaced, never shipped",
+      "modified": "repainted to AXZ, rigged, Draco, KTX2",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/b789-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "PRIMARY; cockpit authored (yoke-glass family)"
+    },
+    {
+      "id": "c172-fg",
+      "types": [
+        "c172"
+      ],
+      "part": "exterior+cockpit",
+      "kind": "model",
+      "file": "models/c172-fg/c172-fg.glb",
+      "derived": true,
+      "source": "https://github.com/c172p-team/c172p",
+      "license": "GPL-2.0-or-later",
+      "author": "the c172p team (AUTHORS in the repo)",
+      "authorUrl": "https://github.com/c172p-team/c172p",
+      "title": "FlightGear Cessna 172P",
+      "format": ".ac (AC3D) + PNG/DDS → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "estimatedBytes": "Models/ ≈ 40 MB",
+      "evidence": "the most detailed free GA aircraft that exists; updated 2026-09-02",
+      "concerns": "GPL; 172P vs the roster's 172S (cosmetic)",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "fetched": false,
+      "fetch": {
+        "type": "git-sparse",
+        "repo": "https://github.com/c172p-team/c172p.git",
+        "paths": [
+          "Models",
+          "AUTHORS",
+          "COPYING",
+          "README.md"
+        ],
+        "into": "models/c172-fg/raw"
+      }
+    },
+    {
+      "id": "conc-fg",
+      "types": [
+        "conc"
+      ],
+      "part": "exterior+cockpit",
+      "kind": "model",
+      "file": "models/conc-fg/conc-fg.glb",
+      "derived": true,
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/Concorde/",
+      "license": "GPL-2.0-or-later",
+      "author": "FlightGear Concorde authors (ReadmeModel.txt in Models/)",
+      "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/Concorde/",
+      "title": "FlightGear Concorde",
+      "format": ".ac (AC3D) + PNG → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "estimatedBytes": "Models/ ≈ 15 MB",
+      "evidence": "full flight deck including the flight-engineer panel; droop nose and visor animated in the XML",
+      "concerns": "GPL; 2015-era textures re-authored",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "fetched": false,
+      "fetch": [
+        {
+          "type": "svn-dir",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/Concorde/Models/",
+          "into": "models/conc-fg/raw/Models",
+          "exclude": [
+            "Liveries/"
+          ]
+        },
+        {
+          "type": "url",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/Concorde/README",
+          "into": "models/conc-fg/raw/README"
+        }
+      ]
+    },
+    {
+      "id": "g650-exterior",
+      "types": [
+        "g650"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/g650-exterior/g650-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/gulfstream-g650er-b88fa0194c2b49ef8560337ab96d7579",
+      "license": "CC-BY-4.0",
+      "author": "Luca Martina",
+      "authorUrl": "https://sketchfab.com/LucaMartina",
+      "title": "Gulfstream G650ER",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 5173215,
+      "faces": 379286,
+      "textures": 0,
+      "published": "2025-04-25",
+      "evidence": "1,039 downloads, 26 likes; the only real G650 on any free source",
+      "concerns": "untextured: skin authored",
+      "modified": "skin authored, rigged, Draco",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/g650-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "PRIMARY; cockpit authored (yoke-glass family)"
+    },
+    {
+      "id": "f16-fg",
+      "types": [
+        "f16"
+      ],
+      "part": "exterior+cockpit",
+      "kind": "model",
+      "file": "models/f16-fg/f16-fg.glb",
+      "derived": true,
+      "source": "https://github.com/NikolaiVChr/f16",
+      "license": "GPL-2.0-or-later",
+      "author": "Nikolai V. Chr. and the f16 contributors (AUTHORS in the repo)",
+      "authorUrl": "https://github.com/NikolaiVChr/f16",
+      "title": "FlightGear F-16",
+      "format": ".ac (AC3D) + PNG/DDS → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "estimatedBytes": "Models/ ≈ 30 MB",
+      "evidence": "the best free F-16 anywhere: blend source in the repo, full cockpit, active author",
+      "concerns": "GPL; DDS textures converted",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "fetched": false,
+      "fetch": {
+        "type": "git-sparse",
+        "repo": "https://github.com/NikolaiVChr/f16.git",
+        "paths": [
+          "Models",
+          "AUTHORS",
+          "COPYING",
+          "README.md"
+        ],
+        "into": "models/f16-fg/raw"
+      }
+    },
+    {
+      "id": "f22-exterior",
+      "types": [
+        "f22"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/f22-exterior/f22-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/f22-raptor-free-2a64abf0866a405c865466c7642ca689",
+      "license": "CC-BY-4.0",
+      "author": "NLM",
+      "authorUrl": "https://sketchfab.com/NLM-Group",
+      "title": "F22 Raptor FREE",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 61473182,
+      "faces": 86638,
+      "textures": "89 at 2048",
+      "published": "2022-08-05",
+      "evidence": "'animated, textured, game-ready'; 2,474 downloads, 178 likes; same studio as the C172SP",
+      "concerns": "61 MB raw → consolidated and KTX2 to ≈ 8 MB",
+      "modified": "rigged, textures consolidated",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/f22-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "PRIMARY; cockpit authored (fighter family)"
+    },
+    {
+      "id": "f35-exterior",
+      "types": [
+        "f35"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/f35-exterior/f35-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/lockheed-martin-f35-lightning-ii-db911de503c74285a8d506951df786d6",
+      "license": "CC-BY-4.0",
+      "author": "andertan",
+      "authorUrl": "https://sketchfab.com/andertan",
+      "title": "Lockheed Martin F35 Lightning II",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 3742999,
+      "faces": 83174,
+      "textures": "6 at 4096",
+      "published": "2024-07-18",
+      "evidence": "2,702 downloads, 119 likes; a consistent author of F-16/F-22/F-35",
+      "concerns": "none beyond unstated provenance",
+      "modified": "rigged",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/f35-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "PRIMARY exterior"
+    },
+    {
+      "id": "f35-fg",
+      "types": [
+        "f35"
+      ],
+      "part": "cockpit",
+      "kind": "model",
+      "file": "models/f35-fg/f35-fg.glb",
+      "derived": true,
+      "source": "https://github.com/FGMEMBERS/F-35B",
+      "license": "GPL-3.0-or-later",
+      "author": "FlightGear F-35B authors (README in the repo)",
+      "authorUrl": "https://github.com/FGMEMBERS/F-35B",
+      "title": "FlightGear F-35B (Cockpit.ac)",
+      "format": ".ac (AC3D) + PNG/DDS → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "estimatedBytes": "≈ 4 MB",
+      "evidence": "a modelled F-35 cockpit for the fighter family",
+      "concerns": "GPL-3; B-variant cockpit for an A",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "fetched": false,
+      "fetch": {
+        "type": "git-sparse",
+        "repo": "https://github.com/FGMEMBERS/F-35B.git",
+        "paths": [
+          "Models",
+          "README",
+          "COPYING"
+        ],
+        "into": "models/f35-fg/raw"
+      }
+    },
+    {
+      "id": "b2-exterior",
+      "types": [
+        "b2"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/b2-exterior/b2-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/pbr-b-2-spirit-b16592b1083948a49ae2afa90d190a08",
+      "license": "CC-BY-4.0",
+      "author": "Immersive3D",
+      "authorUrl": "https://sketchfab.com/Immersive3A",
+      "title": "[PBR] B-2 Spirit",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 69253270,
+      "faces": 26157,
+      "textures": "8 PBR at 4096",
+      "published": "2024-02-05",
+      "evidence": "a studio account; PBR set; 85 likes",
+      "concerns": "69 MB raw → KTX2 ≈ 6 MB",
+      "modified": "rigged, textures re-encoded",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/b2-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "PRIMARY; cockpit authored"
+    },
+    {
+      "id": "b52-exterior",
+      "types": [
+        "b52"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/b52-exterior/b52-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/boeing-b-52-stratofortress-38b0c64bd552431394efa8625d7f5144",
+      "license": "CC-BY-4.0",
+      "author": "bohmerang",
+      "authorUrl": "https://sketchfab.com/bohmerang",
+      "title": "Boeing B-52 Stratofortress",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 2393921,
+      "faces": 16616,
+      "textures": "20 at 1024",
+      "published": "2023-09-12",
+      "evidence": "a known author of free military aircraft; 4,414 downloads, 259 likes",
+      "concerns": "1024 textures re-authored",
+      "modified": "rigged, textures re-authored",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/b52-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "PRIMARY; cockpit authored"
+    }
+  ]
+}

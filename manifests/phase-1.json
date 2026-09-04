@@ -1,0 +1,283 @@
+{
+  "phase": "1",
+  "approvedBy": "Brook Xiao",
+  "approvedOn": "2026-09-04",
+  "note": "Phase 1 = the 737-800 outside, plus its FlightGear flight deck (fetched now, used in Phase 2), the decoders, and four CC0 texture sets for the authored skin. Sketchfab rows are downloaded by Brook (login required); everything else is fetched by scripts/assets/fetch.mjs. CC BY attribution = title, author link, source link, licence link, and the modification note, all rendered in the credits block.",
+  "rows": [
+    {
+      "id": "b738-exterior",
+      "types": [
+        "b-737x",
+        "b-1717",
+        "b-0001f"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/b738-exterior/b738-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/b737-800-model-6cbe380405794ea69d6b0a3d144dd1af",
+      "license": "CC-BY-4.0",
+      "author": "hakai315",
+      "authorUrl": "https://sketchfab.com/hakai315",
+      "title": "B737-800 Model",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 3863769,
+      "faces": 239383,
+      "textures": 0,
+      "published": "2024-03-27",
+      "evidence": "'With landing gear, Detailed, No animation'; white blank finish; 35 likes, 13k views",
+      "concerns": "provenance unstated; UVs and mesh separation unknown until inspected",
+      "modified": "repainted to the AXZ livery with authored PBR textures, rigged to rigs/b738.json, Draco-compressed, KTX2 textures",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/b738-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "PRIMARY exterior"
+    },
+    {
+      "id": "b738-exterior-alt",
+      "types": [
+        "b-737x",
+        "b-1717",
+        "b-0001f"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/b738-exterior-alt/b738-exterior-alt.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/boeing-737-800-600a75a0b6b04517b31de66b27f0b110",
+      "license": "CC-BY-4.0",
+      "author": "icr343",
+      "authorUrl": "https://sketchfab.com/icr343",
+      "title": "Boeing 737-800",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 2370165,
+      "faces": 159146,
+      "textures": 0,
+      "published": "2024-07-20",
+      "evidence": "Fusion 360 CAD, 'Separated components for easy customization'",
+      "concerns": "CAD origin usually means no UVs",
+      "modified": "as above",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/b738-exterior-alt/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+      },
+      "note": "FALLBACK; evaluate both zips before choosing"
+    },
+    {
+      "id": "b738-fg",
+      "types": [
+        "b-737x",
+        "b-1717",
+        "b-0001f"
+      ],
+      "part": "cockpit+exterior-fallback",
+      "kind": "model",
+      "file": "models/b738-fg/b738-fg.glb",
+      "derived": true,
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "license": "GPL-2.0-or-later",
+      "author": "FlightGear 737-800 authors (README in the package)",
+      "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "title": "FlightGear 737-800 (cockpit.ac, flightdesk.ac, pedestal.ac, oh-panel.ac, pedals.ac; 737-800.ac, LWing/RWing/HorzStab/VertStab, nosegear, winglet)",
+      "format": ".ac (AC3D) + PNG → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "estimatedBytes": "≈ 8 MB",
+      "evidence": "a complete modelled 737 flight deck; the exterior is split by part with FlightGear animation XML, which makes it the rigged fallback exterior",
+      "concerns": "GPL (D16); displays are FlightGear canvases, replaced by ours; 2010s textures re-authored",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "fetched": false,
+      "fetch": [
+        {
+          "type": "svn-dir",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/Models/",
+          "into": "models/b738-fg/raw/Models",
+          "exclude": [
+            "Liveries-800/",
+            "Services/"
+          ]
+        },
+        {
+          "type": "url",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/README",
+          "into": "models/b738-fg/raw/README"
+        },
+        {
+          "type": "url",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/COPYING",
+          "into": "models/b738-fg/raw/COPYING"
+        }
+      ]
+    },
+    {
+      "id": "draco-wrapper",
+      "kind": "decoder",
+      "file": "decoders/draco/draco_wasm_wrapper.js",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js",
+      "license": "Apache-2.0",
+      "author": "Google (Draco)",
+      "authorUrl": "https://github.com/google/draco",
+      "title": "Draco WASM wrapper",
+      "format": "js",
+      "fetched": false,
+      "fetch": {
+        "type": "url",
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js"
+      }
+    },
+    {
+      "id": "draco-wasm",
+      "kind": "decoder",
+      "file": "decoders/draco/draco_decoder.wasm",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm",
+      "license": "Apache-2.0",
+      "author": "Google (Draco)",
+      "authorUrl": "https://github.com/google/draco",
+      "title": "Draco decoder (wasm)",
+      "format": "wasm",
+      "fetched": false,
+      "fetch": {
+        "type": "url",
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm"
+      }
+    },
+    {
+      "id": "draco-js",
+      "kind": "decoder",
+      "file": "decoders/draco/draco_decoder.js",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js",
+      "license": "Apache-2.0",
+      "author": "Google (Draco)",
+      "authorUrl": "https://github.com/google/draco",
+      "title": "Draco decoder (js fallback)",
+      "format": "js",
+      "fetched": false,
+      "fetch": {
+        "type": "url",
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js"
+      }
+    },
+    {
+      "id": "basis-js",
+      "kind": "decoder",
+      "file": "decoders/basis/basis_transcoder.js",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js",
+      "license": "Apache-2.0",
+      "author": "Binomial (Basis Universal)",
+      "authorUrl": "https://github.com/BinomialLLC/basis_universal",
+      "title": "Basis Universal transcoder (js)",
+      "format": "js",
+      "fetched": false,
+      "fetch": {
+        "type": "url",
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js"
+      }
+    },
+    {
+      "id": "basis-wasm",
+      "kind": "decoder",
+      "file": "decoders/basis/basis_transcoder.wasm",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm",
+      "license": "Apache-2.0",
+      "author": "Binomial (Basis Universal)",
+      "authorUrl": "https://github.com/BinomialLLC/basis_universal",
+      "title": "Basis Universal transcoder (wasm)",
+      "format": "wasm",
+      "fetched": false,
+      "fetch": {
+        "type": "url",
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm"
+      }
+    },
+    {
+      "id": "tex-blue-metal-plate",
+      "kind": "texture",
+      "file": "textures/blue_metal_plate/",
+      "derived": true,
+      "source": "https://polyhaven.com/a/blue_metal_plate",
+      "license": "CC0-1.0",
+      "author": "Poly Haven",
+      "authorUrl": "https://polyhaven.com",
+      "title": "Blue Metal Plate (4K: diffuse, roughness, normal GL, AO)",
+      "format": "jpg 4K → re-encoded KTX2/WebP tiles for the authored skin",
+      "use": "painted, scratched sheet: base for painted-aluminium roughness and normal detail",
+      "fetched": false,
+      "fetch": {
+        "type": "urls",
+        "into": "textures/blue_metal_plate",
+        "urls": [
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/blue_metal_plate/blue_metal_plate_diff_4k.jpg",
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/blue_metal_plate/blue_metal_plate_rough_4k.jpg",
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/blue_metal_plate/blue_metal_plate_nor_gl_4k.jpg",
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/blue_metal_plate/blue_metal_plate_ao_4k.jpg"
+        ]
+      }
+    },
+    {
+      "id": "tex-metal-plate",
+      "kind": "texture",
+      "file": "textures/metal_plate/",
+      "derived": true,
+      "source": "https://polyhaven.com/a/metal_plate",
+      "license": "CC0-1.0",
+      "author": "Poly Haven",
+      "authorUrl": "https://polyhaven.com",
+      "title": "Metal Plate (2K: diffuse, roughness, normal GL, metalness, AO)",
+      "format": "jpg 2K → tiles",
+      "use": "bare/painted plate: normal detail for panels and fasteners",
+      "fetched": false,
+      "fetch": {
+        "type": "urls",
+        "into": "textures/metal_plate",
+        "urls": [
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_diff_2k.jpg",
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_rough_2k.jpg",
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_nor_gl_2k.jpg",
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_metal_2k.jpg",
+          "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_ao_2k.jpg"
+        ]
+      }
+    },
+    {
+      "id": "tex-metal049a",
+      "kind": "texture",
+      "file": "textures/Metal049A/",
+      "derived": true,
+      "source": "https://ambientcg.com/view?id=Metal049A",
+      "license": "CC0-1.0",
+      "author": "ambientCG",
+      "authorUrl": "https://ambientcg.com",
+      "title": "Metal 049 A (2K JPG set)",
+      "format": "zip of 2K jpg maps → tiles",
+      "use": "clean silver aluminium: bare-metal leading edges, engine inlets",
+      "fetched": false,
+      "fetch": {
+        "type": "url",
+        "url": "https://ambientcg.com/get?file=Metal049A_2K-JPG.zip",
+        "into": "textures/Metal049A/Metal049A_2K-JPG.zip"
+      }
+    },
+    {
+      "id": "tex-metal032",
+      "kind": "texture",
+      "file": "textures/Metal032/",
+      "derived": true,
+      "source": "https://ambientcg.com/view?id=Metal032",
+      "license": "CC0-1.0",
+      "author": "ambientCG",
+      "authorUrl": "https://ambientcg.com",
+      "title": "Metal 032 (2K JPG set)",
+      "format": "zip of 2K jpg maps → tiles",
+      "use": "grey smooth metal: nacelles, gear legs",
+      "fetched": false,
+      "fetch": {
+        "type": "url",
+        "url": "https://ambientcg.com/get?file=Metal032_2K-JPG.zip",
+        "into": "textures/Metal032/Metal032_2K-JPG.zip"
+      }
+    }
+  ]
+}
