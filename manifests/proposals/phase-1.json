@@ -1,0 +1,109 @@
+{
+  "phase": "1",
+  "status": "PROPOSAL — not approved, nothing fetched",
+  "proposedOn": "2026-09-04",
+  "note": "Phase 1 = the 737-800 outside. Rows are ordered by recommendation. Sketchfab downloads require a logged-in Sketchfab account, so Brook downloads the glTF zip in his browser into raw/models/<id>/; build-index records the sha256. CC BY 4.0 attribution = creator name, link to the model, licence name with link, and a note that the work was modified (repainted, rigged, compressed). All three are rendered in the credits block and stored in credits.json.",
+  "rows": [
+    {
+      "id": "b738-exterior",
+      "kind": "model",
+      "file": "models/b738-exterior/source.glb",
+      "source": "https://sketchfab.com/3d-models/b737-800-model-6cbe380405794ea69d6b0a3d144dd1af",
+      "license": "CC-BY-4.0",
+      "author": "hakai315",
+      "authorUrl": "https://sketchfab.com/hakai315",
+      "title": "B737-800 Model",
+      "format": "glTF 2.0 (Sketchfab auto-converted zip: .gltf + .bin)",
+      "bytes": 3863769,
+      "faces": 239383,
+      "vertices": 142987,
+      "textures": 0,
+      "published": "2024-03-27",
+      "evidence": "description: 'With landing gear, Detailed, No animation'; white blank finish; 35 likes, 13k views; no livery to strip",
+      "concerns": "provenance unstated (no 'made in' credit, uploader has no other aircraft); UVs unknown until inspected; mesh separation unknown (a rig needs gear, flaps, spoilers, control surfaces as separate nodes, else they are split by bounds or cut in Blender)",
+      "modified": "repainted to the AXZ livery with authored PBR textures, rigged to rigs/b738.json, Draco-compressed, KTX2 textures",
+      "recommendation": "PRIMARY exterior geometry"
+    },
+    {
+      "id": "b738-exterior-alt",
+      "kind": "model",
+      "file": "models/b738-exterior-alt/source.glb",
+      "source": "https://sketchfab.com/3d-models/boeing-737-800-600a75a0b6b04517b31de66b27f0b110",
+      "license": "CC-BY-4.0",
+      "author": "icr343",
+      "authorUrl": "https://sketchfab.com/icr343",
+      "title": "Boeing 737-800",
+      "format": "glTF 2.0 (Sketchfab zip)",
+      "bytes": 2370165,
+      "faces": 159146,
+      "vertices": 80518,
+      "textures": 0,
+      "published": "2024-07-20",
+      "evidence": "description states Fusion 360 CAD, 'Separated components for easy customization'; blue nacelles and fin, no airline marks",
+      "concerns": "CAD origin usually means no UVs and dense flat-shaded tessellation; description reads as marketing copy",
+      "modified": "as above",
+      "recommendation": "FALLBACK if the primary has no usable UVs or mesh separation; evaluate both zips before choosing"
+    },
+    {
+      "id": "b738-exterior-blank",
+      "kind": "model",
+      "file": "models/b738-exterior-blank/source.glb",
+      "source": "https://sketchfab.com/3d-models/b737-800-blank-livery-1ba5534c77c746028e64cc80c07149bc",
+      "license": "CC-BY-4.0",
+      "author": "someone353",
+      "authorUrl": "https://sketchfab.com/someone353",
+      "title": "B737-800 Blank Livery",
+      "format": "glTF 2.0 (Sketchfab zip)",
+      "bytes": 1326359,
+      "faces": 117730,
+      "vertices": 59118,
+      "textures": 0,
+      "published": "2024-09-08",
+      "evidence": "blank white finish, 4 materials, 93 downloads",
+      "concerns": "no description at all; the least detail of the three from its thumbnail",
+      "modified": "as above",
+      "recommendation": "SECOND FALLBACK; evaluate only if both above fail inspection"
+    },
+    {
+      "id": "draco-wrapper", "kind": "decoder", "file": "decoders/draco/draco_wasm_wrapper.js",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js",
+      "license": "Apache-2.0", "author": "Google (Draco)", "format": "js", "bytes": 11684,
+      "concerns": "Apache-2.0 is not yet in the allowlist (decision D12)", "recommendation": "self-host with the model"
+    },
+    {
+      "id": "draco-wasm", "kind": "decoder", "file": "decoders/draco/draco_decoder.wasm",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm",
+      "license": "Apache-2.0", "author": "Google (Draco)", "format": "wasm", "bytes": 59333, "recommendation": "self-host"
+    },
+    {
+      "id": "draco-js", "kind": "decoder", "file": "decoders/draco/draco_decoder.js",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js",
+      "license": "Apache-2.0", "author": "Google (Draco)", "format": "js", "bytes": 105136, "recommendation": "self-host (no-WASM fallback)"
+    },
+    {
+      "id": "basis-js", "kind": "decoder", "file": "decoders/basis/basis_transcoder.js",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js",
+      "license": "Apache-2.0", "author": "Binomial (Basis Universal)", "format": "js", "bytes": 15826, "recommendation": "self-host"
+    },
+    {
+      "id": "basis-wasm", "kind": "decoder", "file": "decoders/basis/basis_transcoder.wasm",
+      "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm",
+      "license": "Apache-2.0", "author": "Binomial (Basis Universal)", "format": "wasm", "bytes": 245398, "recommendation": "self-host"
+    }
+  ],
+  "rejected": [
+    { "source": "https://sketchfab.com/3d-models/boeing737-259de41be0c7410e86b7e79be33d6b3a", "author": "manilov.ap", "why": "the most credible provenance on the site (2017, 4,440 downloads, 23 textures at 2048) but the thumbnail is a 737-300 in Lufthansa livery: wrong variant, trademarked marks" },
+    { "source": "https://sketchfab.com/3d-models/boeing-737-800-7a548b5ba64340f78f7c58d23781ffe9", "author": "andriiharbut", "why": "easyJet-style livery and 512 px textures" },
+    { "source": "https://sketchfab.com/3d-models/boeing-737-800-fa2d273dba0e45348284a6d6cd711218", "author": "outpiston", "why": "CC BY-NC-SA: not in the allowlist" },
+    { "source": "https://sketchfab.com/3d-models/none-a74a78406d3d4b4da22440bc5d15eeb9 and 07d10c8a0b024c6986377427b954e0c7", "why": "identical face/vertex counts under two accounts, one with a name unfit to print: a re-upload of unknown origin" },
+    { "source": "https://sketchfab.com/3d-models/japan-airlines-boeing-737-800-3a233e2d97124505a49941985fdf2bc2", "why": "JAL livery; description is copied airline prose, not a model description" },
+    { "source": "https://sketchfab.com/3d-models/none-3f1f73eebcf74386baa48fdf934a1bf7", "why": "chibi 'eggplane' proportions" },
+    { "source": "https://sketchfab.com/3d-models/boeing-737-800-cockpit-ade5ab26c6ed44ac820068a06f56a253", "author": "taeemtasbi", "why": "a real 737 flight-deck interior, but 1.75M faces, no textures, no description, no tags, no provenance; near-identical face count re-uploaded by sanjujain960 in 2026-04. Usable only as reference, not as an asset" }
+  ],
+  "decisions": [
+    "D12 add Apache-2.0 (and MIT) to the licence allowlist for kind=decoder rows",
+    "D13 exterior: sourced CC-BY geometry + authored PBR skin (recommended), or the spec's D2 authored loft; decide after inspecting the primary zip",
+    "D14 cockpit: no acceptable CC source exists; build it (spec §7) as `authored`, using the taeemtasbi thumbnail only as a visual reference",
+    "D15 the credits gate gains required `authorUrl`, `source` link and `modified` note for CC-BY rows (a stricter gate, not a looser one)"
+  ]
+}
