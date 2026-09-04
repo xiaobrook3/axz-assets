@@ -7,10 +7,10 @@
     {
       "id": "a32x-fg",
       "types": [
-        "b-321x",
-        "a320"
+        "a320",
+        "b-321x"
       ],
-      "part": "exterior+cockpit",
+      "part": "exterior (A320) + cockpit (A320 and A321)",
       "kind": "model",
       "file": "models/a32x-fg/a32x-fg.glb",
       "derived": true,
@@ -18,13 +18,13 @@
       "license": "GPL-2.0-or-later",
       "author": "legoboyvdlp, Octal450, merspieler and the A320-family contributors (AUTHORS in the repo)",
       "authorUrl": "https://github.com/legoboyvdlp/A320-family",
-      "title": "FlightGear A320-family (A320-200 and A321 variants)",
+      "title": "FlightGear A320-family (A320-200 variants; flight deck shared with the A321)",
       "format": ".ac (AC3D) + PNG/DDS → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
       "estimatedBytes": "Models/ ≈ 60 MB",
       "evidence": "the flagship Airbus of the open-source sim, updated 2026-08-22; A318/A319/A320/A321 fuselage variants in one package",
       "concerns": "GPL; .ac conversion; FlightGear canvas displays replaced by ours",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "git-sparse",
         "repo": "https://github.com/legoboyvdlp/A320-family.git",
@@ -35,6 +35,41 @@
           "README.md"
         ],
         "into": "models/a32x-fg/raw"
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 143875488,
+      "files": 408,
+      "sha256": "c8f31c685c4f16590550b364bc62beee6720027438b69efe7d5c99ffe7f2b590",
+      "commit": "4c58cb7459aae29dfcb8fcf5e4d5b56c9e0ba2a2"
+    },
+    {
+      "id": "a321-exterior",
+      "types": [
+        "b-321x"
+      ],
+      "part": "exterior",
+      "kind": "model",
+      "file": "models/a321-exterior/a321-exterior.glb",
+      "derived": true,
+      "source": "https://sketchfab.com/3d-models/a321ceo-sharklets-fedc658a3988480aa25f75831c285653",
+      "license": "CC-BY-4.0",
+      "author": "Otto Kirchhoff",
+      "authorUrl": "https://sketchfab.com/Otto_Kirchhoff",
+      "title": "A321ceo_sharklets",
+      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "sourceBytes": 1776436,
+      "faces": 92657,
+      "textures": 0,
+      "published": "2026-02-02",
+      "evidence": "48 materials; the description's MSN/hours read like an engineer's own model",
+      "concerns": "untextured (authored skin); 24 downloads",
+      "modified": "repainted to the AXZ livery with authored PBR textures, rigged, Draco",
+      "note": "promoted from the fleet proposal's fallback on 2026-09-04: the FlightGear A320-family package carries no A321 fuselage (A320-216.ac only). The A321 shares the A320 flight deck in reality, so a32x-fg supplies the cockpit.",
+      "fetched": false,
+      "fetch": {
+        "type": "manual",
+        "expect": "models/a321-exterior/source.zip",
+        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
       }
     },
     {
@@ -86,7 +121,7 @@
       "evidence": "a modelled 747 flight deck for the yoke-glass family",
       "concerns": "2000s textures re-authored",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-      "fetched": false,
+      "fetched": true,
       "fetch": [
         {
           "type": "svn-dir",
@@ -101,7 +136,11 @@
           "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/747-400/COPYING",
           "into": "models/b744-fg/raw/COPYING"
         }
-      ]
+      ],
+      "fetchedOn": "2026-09-04",
+      "bytes": 15227258,
+      "files": 103,
+      "sha256": "da0eca0fb517ac939d167924c9d4b3f8750a6b7191932ef2cb145acfa624ac7e"
     },
     {
       "id": "b789-exterior",
@@ -152,7 +191,7 @@
       "evidence": "the most detailed free GA aircraft that exists; updated 2026-09-02",
       "concerns": "GPL; 172P vs the roster's 172S (cosmetic)",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "git-sparse",
         "repo": "https://github.com/c172p-team/c172p.git",
@@ -163,7 +202,12 @@
           "README.md"
         ],
         "into": "models/c172-fg/raw"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 176272548,
+      "files": 659,
+      "sha256": "95e2e9d297e728dcb08a05bf353805b042b4491879db43f3d9c36e74949a0836",
+      "commit": "84477612bba340ab98004a10f8b28a81c18e6169"
     },
     {
       "id": "conc-fg",
@@ -184,7 +228,7 @@
       "evidence": "full flight deck including the flight-engineer panel; droop nose and visor animated in the XML",
       "concerns": "GPL; 2015-era textures re-authored",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-      "fetched": false,
+      "fetched": true,
       "fetch": [
         {
           "type": "svn-dir",
@@ -194,7 +238,11 @@
             "Liveries/"
           ]
         }
-      ]
+      ],
+      "fetchedOn": "2026-09-04",
+      "bytes": 8281196,
+      "files": 141,
+      "sha256": "16f530c0ed74c8de3dab615d72207940dbcbe61ff67c3c79396b3f4b5e2adf67"
     },
     {
       "id": "g650-exterior",
@@ -245,7 +293,7 @@
       "evidence": "the best free F-16 anywhere: blend source in the repo, full cockpit, active author",
       "concerns": "GPL; DDS textures converted",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "git-sparse",
         "repo": "https://github.com/NikolaiVChr/f16.git",
@@ -256,7 +304,12 @@
           "README.md"
         ],
         "into": "models/f16-fg/raw"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 533080499,
+      "files": 1386,
+      "sha256": "bf25abc1887739a75a53d148c1a04d2b8031ddb23b4a2e714c41a0e8d9cb650f",
+      "commit": "4a66588e18f3256ebeded43857cb89b79a55e803"
     },
     {
       "id": "f22-exterior",
@@ -337,7 +390,7 @@
       "evidence": "a modelled F-35 cockpit for the fighter family",
       "concerns": "GPL-3; B-variant cockpit for an A",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "git-sparse",
         "repo": "https://github.com/FGMEMBERS/F-35B.git",
@@ -347,7 +400,12 @@
           "COPYING"
         ],
         "into": "models/f35-fg/raw"
-      }
+      },
+      "fetchedOn": "2026-09-04",
+      "bytes": 23371797,
+      "files": 211,
+      "sha256": "35d1e0e4f421cb0670e0412e5cb26561209792f9c9d7362907d3e992d9538da3",
+      "commit": "2726b3bdf3c7c54ea09a5d4a248e86a739604ca7"
     },
     {
       "id": "b2-exterior",

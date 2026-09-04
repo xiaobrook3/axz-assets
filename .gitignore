@@ -3,3 +3,5 @@ raw/
 node_modules/
 .DS_Store
 .vercel/
+# converted outputs, regenerable from raw/ + axz-wab-source/scripts/assets
+derived/
