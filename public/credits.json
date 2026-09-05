@@ -182,5 +182,25 @@
     "source": "https://github.com/FGMEMBERS/F-35B",
     "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
     "phase": "4"
+  },
+  {
+    "id": "b789-fg",
+    "title": "FlightGear 787 family (787-9 variant)",
+    "author": "the 787-family contributors: legoboyvdlp's 787-9 merged with the FGAddon 787-8 by omega95 and others (AUTHORS in the repo)",
+    "authorUrl": "https://github.com/IskenderWang/787-family",
+    "license": "GPL-2.0-or-later",
+    "source": "https://github.com/IskenderWang/787-family",
+    "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML, real marks painted out; published under the GPL in this repo",
+    "phase": "4"
+  },
+  {
+    "id": "f22-fg",
+    "title": "FlightGear F-22 Raptor (FGUK)",
+    "author": "FGUK hangar F-22 authors (README in the repo)",
+    "authorUrl": "https://github.com/FGMEMBERS/F-22",
+    "license": "GPL-2.0-or-later",
+    "source": "https://github.com/FGMEMBERS/F-22",
+    "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML, real marks painted out; published under the GPL in this repo",
+    "phase": "4"
   }
 ]

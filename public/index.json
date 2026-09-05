@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "builtAt": "2026-09-05T15:06:24.203Z",
+  "builtAt": "2026-09-05T15:41:06.142Z",
   "origin": "https://axz-assets.vercel.app",
   "assets": {
     "uv-probe": {
@@ -173,6 +173,34 @@
         "f35"
       ],
       "part": "cockpit"
+    },
+    "b789-fg": {
+      "kind": "model",
+      "url": "models/b789-fg.9ae742f3.glb",
+      "bytes": 4754452,
+      "sha256": "9ae742f3f35184cc8feb4472db6ab4013fc88bf1a87fc3df60cf5b0eaa1e1eff",
+      "sourceSha256": "065fd9609249ae976a30e4f03cede8c1b863724c69c596f4330831853d2679c8",
+      "license": "GPL-2.0-or-later",
+      "author": "the 787-family contributors: legoboyvdlp's 787-9 merged with the FGAddon 787-8 by omega95 and others (AUTHORS in the repo)",
+      "source": "https://github.com/IskenderWang/787-family",
+      "types": [
+        "b789"
+      ],
+      "part": "exterior-fallback+cockpit"
+    },
+    "f22-fg": {
+      "kind": "model",
+      "url": "models/f22-fg.b7e1435e.glb",
+      "bytes": 2302040,
+      "sha256": "b7e1435e4a77c76708870eab17c7b1fe735df867cb4c5f377407a55e1dd572a3",
+      "sourceSha256": "56a6bb8d7e7e377573cecc2d9e5d57865662d3a14eb2629474570cc404053efc",
+      "license": "GPL-2.0-or-later",
+      "author": "FGUK hangar F-22 authors (README in the repo)",
+      "source": "https://github.com/FGMEMBERS/F-22",
+      "types": [
+        "f22"
+      ],
+      "part": "exterior-fallback+cockpit"
     }
   },
   "credits": [
@@ -358,6 +386,26 @@
       "license": "GPL-3.0-or-later",
       "source": "https://github.com/FGMEMBERS/F-35B",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4"
+    },
+    {
+      "id": "b789-fg",
+      "title": "FlightGear 787 family (787-9 variant)",
+      "author": "the 787-family contributors: legoboyvdlp's 787-9 merged with the FGAddon 787-8 by omega95 and others (AUTHORS in the repo)",
+      "authorUrl": "https://github.com/IskenderWang/787-family",
+      "license": "GPL-2.0-or-later",
+      "source": "https://github.com/IskenderWang/787-family",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML, real marks painted out; published under the GPL in this repo",
+      "phase": "4"
+    },
+    {
+      "id": "f22-fg",
+      "title": "FlightGear F-22 Raptor (FGUK)",
+      "author": "FGUK hangar F-22 authors (README in the repo)",
+      "authorUrl": "https://github.com/FGMEMBERS/F-22",
+      "license": "GPL-2.0-or-later",
+      "source": "https://github.com/FGMEMBERS/F-22",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML, real marks painted out; published under the GPL in this repo",
       "phase": "4"
     }
   ],

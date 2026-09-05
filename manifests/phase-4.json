@@ -481,6 +481,80 @@
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY; cockpit authored"
+    },
+    {
+      "id": "b789-fg",
+      "types": [
+        "b789"
+      ],
+      "part": "exterior-fallback+cockpit",
+      "kind": "model",
+      "file": "models/b789-fg/b789-fg.glb",
+      "derived": true,
+      "source": "https://github.com/IskenderWang/787-family",
+      "license": "GPL-2.0-or-later",
+      "author": "the 787-family contributors: legoboyvdlp's 787-9 merged with the FGAddon 787-8 by omega95 and others (AUTHORS in the repo)",
+      "authorUrl": "https://github.com/IskenderWang/787-family",
+      "title": "FlightGear 787 family (787-9 variant)",
+      "format": ".ac (AC3D) + PNG → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "evidence": "actively maintained (pushed 2026-09-03); the -9 lineage is legoboyvdlp's, the same author as the A320-family",
+      "concerns": "GPL; fallback until the mudkipz321 Sketchfab model arrives",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML, real marks painted out; published under the GPL in this repo",
+      "approvedBy": "Brook Xiao (\"continue finding new assets\", 2026-09-05)",
+      "fetched": true,
+      "fetch": {
+        "type": "git-sparse",
+        "repo": "https://github.com/IskenderWang/787-family.git",
+        "paths": [
+          "Models",
+          "AUTHORS",
+          "COPYING",
+          "README.md"
+        ],
+        "into": "models/b789-fg/raw"
+      },
+      "fetchedOn": "2026-09-05",
+      "bytes": 357986049,
+      "files": 449,
+      "sha256": "065fd9609249ae976a30e4f03cede8c1b863724c69c596f4330831853d2679c8",
+      "commit": "7275231fdee4d0d549cfc2b05ac6b377ceea3f32"
+    },
+    {
+      "id": "f22-fg",
+      "types": [
+        "f22"
+      ],
+      "part": "exterior-fallback+cockpit",
+      "kind": "model",
+      "file": "models/f22-fg/f22-fg.glb",
+      "derived": true,
+      "source": "https://github.com/FGMEMBERS/F-22",
+      "license": "GPL-2.0-or-later",
+      "author": "FGUK hangar F-22 authors (README in the repo)",
+      "authorUrl": "https://github.com/FGMEMBERS/F-22",
+      "title": "FlightGear F-22 Raptor (FGUK)",
+      "format": ".ac (AC3D) + PNG → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "evidence": "F-22.ac 4.8 MB with 20 texture maps; the FGUK hangar's model, GPL",
+      "concerns": "2019 mirror, 200 KB textures; fallback until the NLM Sketchfab model arrives",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML, real marks painted out; published under the GPL in this repo",
+      "approvedBy": "Brook Xiao (\"continue finding new assets\", 2026-09-05)",
+      "fetched": true,
+      "fetch": {
+        "type": "git-sparse",
+        "repo": "https://github.com/FGMEMBERS/F-22.git",
+        "paths": [
+          "Models",
+          "README",
+          "COPYING",
+          "LICENSE"
+        ],
+        "into": "models/f22-fg/raw"
+      },
+      "fetchedOn": "2026-09-05",
+      "bytes": 26859242,
+      "files": 258,
+      "sha256": "56a6bb8d7e7e377573cecc2d9e5d57865662d3a14eb2629474570cc404053efc",
+      "commit": "da046fba441d9fb513b981905bcee80fd61e6706"
     }
   ]
 }
