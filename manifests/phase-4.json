@@ -67,9 +67,10 @@
       "note": "promoted from the fleet proposal's fallback on 2026-09-04: the FlightGear A320-family package carries no A321 fuselage (A320-216.ac only). The A321 shares the A320 flight deck in reality, so a32x-fg supplies the cockpit.",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "fedc658a3988480aa25f75831c285653",
         "expect": "models/a321-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       }
     },
     {
@@ -96,9 +97,10 @@
       "modified": "repainted, rigged, Draco, KTX2",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "8c9c02b847344841adaa43c9ffe707a8",
         "expect": "models/b744-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY exterior"
     },
@@ -167,9 +169,10 @@
       "modified": "repainted to AXZ, rigged, Draco, KTX2",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "d383b7e3b858407e8cff7365820cc4dd",
         "expect": "models/b789-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY; cockpit authored (yoke-glass family)"
     },
@@ -275,9 +278,10 @@
       "modified": "skin authored, rigged, Draco",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "b88fa0194c2b49ef8560337ab96d7579",
         "expect": "models/g650-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY; cockpit authored (yoke-glass family)"
     },
@@ -342,9 +346,10 @@
       "modified": "rigged, textures consolidated",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "2a64abf0866a405c865466c7642ca689",
         "expect": "models/f22-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY; cockpit authored (fighter family)"
     },
@@ -372,9 +377,10 @@
       "modified": "rigged",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "db911de503c74285a8d506951df786d6",
         "expect": "models/f35-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY exterior"
     },
@@ -438,9 +444,10 @@
       "modified": "rigged, textures re-encoded",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "b16592b1083948a49ae2afa90d190a08",
         "expect": "models/b2-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY; cockpit authored"
     },
@@ -468,9 +475,10 @@
       "modified": "rigged, textures re-authored",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "38b0c64bd552431394efa8625d7f5144",
         "expect": "models/b52-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY; cockpit authored"
     }

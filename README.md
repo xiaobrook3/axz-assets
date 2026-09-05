@@ -13,3 +13,13 @@ project and read cross-origin by the simulator.
 Licences allowed: CC0-1.0, CC-BY-4.0, CC-BY-3.0, PDM, Copernicus, ODbL,
 purchased (with redistribution), authored. Enforced by
 `axz-wab-source/scripts/check-axz-licenses.mjs`.
+
+## Fetching
+
+`node ../axz-wab-source/scripts/assets/fetch.mjs manifests/<phase>.json` fetches
+every approved, unfetched row: public URLs, SourceForge SVN directories and
+GitHub repos directly; Sketchfab models through the download API when
+`SKETCHFAB_TOKEN` is set in `.env.local` (see `.env.local.example`), otherwise
+it waits for a browser download at `raw/<expect>`. Then
+`fg-build.mjs` (FlightGear packages) or the glTF pipeline, `compress.mjs`
+(Draco + WebP, names and rig kept), and `build-index.mjs` to publish.

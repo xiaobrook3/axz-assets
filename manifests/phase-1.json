@@ -30,9 +30,10 @@
       "modified": "repainted to the AXZ livery with authored PBR textures, rigged to rigs/b738.json, Draco-compressed, KTX2 textures",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "6cbe380405794ea69d6b0a3d144dd1af",
         "expect": "models/b738-exterior/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "PRIMARY exterior"
     },
@@ -62,9 +63,10 @@
       "modified": "as above",
       "fetched": false,
       "fetch": {
-        "type": "manual",
+        "type": "sketchfab",
+        "uid": "600a75a0b6b04517b31de66b27f0b110",
         "expect": "models/b738-exterior-alt/source.zip",
-        "instructions": "download from Sketchfab (logged in) → Download 3D Model → glTF; save the zip as raw/<file>"
+        "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
       "note": "FALLBACK; evaluate both zips before choosing"
     },
@@ -119,7 +121,7 @@
     {
       "id": "draco-wrapper",
       "kind": "decoder",
-      "file": "decoders/draco/draco_wasm_wrapper.js",
+      "file": "decoders/three-0.170.0/draco/draco_wasm_wrapper.js",
       "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js",
       "license": "Apache-2.0",
       "author": "Google (Draco)",
@@ -129,7 +131,8 @@
       "fetched": true,
       "fetch": {
         "type": "url",
-        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js"
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js",
+        "into": "decoders/three-0.170.0/draco/draco_wasm_wrapper.js"
       },
       "fetchedOn": "2026-09-04",
       "bytes": 58456,
@@ -139,7 +142,7 @@
     {
       "id": "draco-wasm",
       "kind": "decoder",
-      "file": "decoders/draco/draco_decoder.wasm",
+      "file": "decoders/three-0.170.0/draco/draco_decoder.wasm",
       "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm",
       "license": "Apache-2.0",
       "author": "Google (Draco)",
@@ -149,7 +152,8 @@
       "fetched": true,
       "fetch": {
         "type": "url",
-        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm"
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.wasm",
+        "into": "decoders/three-0.170.0/draco/draco_decoder.wasm"
       },
       "fetchedOn": "2026-09-04",
       "bytes": 192420,
@@ -159,7 +163,7 @@
     {
       "id": "draco-js",
       "kind": "decoder",
-      "file": "decoders/draco/draco_decoder.js",
+      "file": "decoders/three-0.170.0/draco/draco_decoder.js",
       "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js",
       "license": "Apache-2.0",
       "author": "Google (Draco)",
@@ -169,7 +173,8 @@
       "fetched": true,
       "fetch": {
         "type": "url",
-        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js"
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/draco_decoder.js",
+        "into": "decoders/three-0.170.0/draco/draco_decoder.js"
       },
       "fetchedOn": "2026-09-04",
       "bytes": 512465,
@@ -179,7 +184,7 @@
     {
       "id": "basis-js",
       "kind": "decoder",
-      "file": "decoders/basis/basis_transcoder.js",
+      "file": "decoders/three-0.170.0/basis/basis_transcoder.js",
       "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js",
       "license": "Apache-2.0",
       "author": "Binomial (Basis Universal)",
@@ -189,7 +194,8 @@
       "fetched": true,
       "fetch": {
         "type": "url",
-        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js"
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.js",
+        "into": "decoders/three-0.170.0/basis/basis_transcoder.js"
       },
       "fetchedOn": "2026-09-04",
       "bytes": 57529,
@@ -199,7 +205,7 @@
     {
       "id": "basis-wasm",
       "kind": "decoder",
-      "file": "decoders/basis/basis_transcoder.wasm",
+      "file": "decoders/three-0.170.0/basis/basis_transcoder.wasm",
       "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm",
       "license": "Apache-2.0",
       "author": "Binomial (Basis Universal)",
@@ -209,7 +215,8 @@
       "fetched": true,
       "fetch": {
         "type": "url",
-        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm"
+        "url": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/basis/basis_transcoder.wasm",
+        "into": "decoders/three-0.170.0/basis/basis_transcoder.wasm"
       },
       "fetchedOn": "2026-09-04",
       "bytes": 527333,
