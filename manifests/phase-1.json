@@ -77,7 +77,7 @@
         "b-1717",
         "b-0001f"
       ],
-      "part": "cockpit+exterior-fallback",
+      "part": "exterior-fallback",
       "kind": "model",
       "file": "models/b738-fg/b738-fg.glb",
       "derived": true,
@@ -117,6 +117,54 @@
       "bytes": 11284778,
       "files": 121,
       "sha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad"
+    },
+    {
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "license": "GPL-2.0-or-later",
+      "author": "FlightGear 737-800 authors (README in the package)",
+      "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "format": ".ac (AC3D) + PNG → converted to glTF by scripts/assets/ac2gltf.mjs, textures re-encoded",
+      "evidence": "a complete modelled 737 flight deck; the exterior is split by part with FlightGear animation XML, which makes it the rigged fallback exterior",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "fetched": true,
+      "fetchedOn": "2026-09-04",
+      "bytes": 11284778,
+      "files": 121,
+      "sha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
+      "id": "b738-fg-cockpit",
+      "types": [
+        "b-737x",
+        "b-1717",
+        "b-0001f"
+      ],
+      "part": "cockpit",
+      "kind": "model",
+      "file": "models/b738-fg-cockpit/b738-fg-cockpit.glb",
+      "derived": true,
+      "title": "FlightGear 737-800 flight deck (cockpit.ac, flightdesk.ac, pedestal.ac, pedals.ac)",
+      "concerns": "same package as b738-fg; the displays are FlightGear canvases, replaced by ours",
+      "note": "built from the same fetched package as b738-fg with --include; no second download",
+      "fetch": [
+        {
+          "type": "svn-dir",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/Models/",
+          "into": "models/b738-fg/raw/Models",
+          "exclude": [
+            "Liveries-800/",
+            "Services/"
+          ]
+        },
+        {
+          "type": "url",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/README.md",
+          "into": "models/b738-fg/raw/README.md"
+        },
+        {
+          "type": "url",
+          "url": "https://svn.code.sf.net/p/flightgear/fgaddon/trunk/Aircraft/737-800/LICENSE",
+          "into": "models/b738-fg/raw/LICENSE"
+        }
+      ]
     },
     {
       "id": "draco-wrapper",

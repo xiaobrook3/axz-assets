@@ -20,6 +20,16 @@
     "phase": "1"
   },
   {
+    "id": "b738-fg-cockpit",
+    "title": "FlightGear 737-800 flight deck (cockpit.ac, flightdesk.ac, pedestal.ac, pedals.ac)",
+    "author": "FlightGear 737-800 authors (README in the package)",
+    "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+    "license": "GPL-2.0-or-later",
+    "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+    "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+    "phase": "1"
+  },
+  {
     "id": "draco-wrapper",
     "title": "Draco WASM wrapper",
     "author": "Google (Draco)",

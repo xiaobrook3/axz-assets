@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "builtAt": "2026-09-05T05:33:30.914Z",
+  "builtAt": "2026-09-05T15:06:24.203Z",
   "origin": "https://axz-assets.vercel.app",
   "assets": {
     "uv-probe": {
@@ -14,9 +14,9 @@
     },
     "b738-fg": {
       "kind": "model",
-      "url": "models/b738-fg.f9950d1f.glb",
-      "bytes": 425852,
-      "sha256": "f9950d1f8c123bcf54365b2ecb4ffb653630a91f198f0c95c0a901b4e604ea5a",
+      "url": "models/b738-fg.8e8e8327.glb",
+      "bytes": 425860,
+      "sha256": "8e8e83273e9ee1cb48ec0b85ea637b2dab61eb491b86e7f6fa295502843d400c",
       "sourceSha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
       "license": "GPL-2.0-or-later",
       "author": "FlightGear 737-800 authors (README in the package)",
@@ -26,7 +26,23 @@
         "b-1717",
         "b-0001f"
       ],
-      "part": "cockpit+exterior-fallback"
+      "part": "exterior-fallback"
+    },
+    "b738-fg-cockpit": {
+      "kind": "model",
+      "url": "models/b738-fg-cockpit.51324aca.glb",
+      "bytes": 801636,
+      "sha256": "51324aca2ec2fb515f896ed2918ec3e5ea8f070a44c9313822f4492a6004c124",
+      "sourceSha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
+      "license": "GPL-2.0-or-later",
+      "author": "FlightGear 737-800 authors (README in the package)",
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "types": [
+        "b-737x",
+        "b-1717",
+        "b-0001f"
+      ],
+      "part": "cockpit"
     },
     "draco-wrapper": {
       "kind": "decoder",
@@ -75,9 +91,9 @@
     },
     "a32x-fg": {
       "kind": "model",
-      "url": "models/a32x-fg.357e2cea.glb",
-      "bytes": 1388236,
-      "sha256": "357e2ceab4cd1a48e872eca3def70b8bda73ab0453211b149a1a1abe2006de78",
+      "url": "models/a32x-fg.4864aefd.glb",
+      "bytes": 1388264,
+      "sha256": "4864aefd28ae5ac30b263f5a0f0fba92cf7fd2cb8bdd3c3a17231ef94d79c08b",
       "sourceSha256": "c8f31c685c4f16590550b364bc62beee6720027438b69efe7d5c99ffe7f2b590",
       "license": "GPL-2.0-or-later",
       "author": "legoboyvdlp, Octal450, merspieler and the A320-family contributors (AUTHORS in the repo)",
@@ -90,9 +106,9 @@
     },
     "b744-fg": {
       "kind": "model",
-      "url": "models/b744-fg.7fcc21be.glb",
-      "bytes": 1676512,
-      "sha256": "7fcc21bee48b3639ac26292bda5107410bdac208cfbc1eeda08e29d1bae20678",
+      "url": "models/b744-fg.4a51652a.glb",
+      "bytes": 1676812,
+      "sha256": "4a51652a2a877b938fd8ce71c9eafd828307f8adce4fc02e249f5b764318c5ee",
       "sourceSha256": "da0eca0fb517ac939d167924c9d4b3f8750a6b7191932ef2cb145acfa624ac7e",
       "license": "GPL-2.0-or-later",
       "author": "FlightGear 747-400 authors (README in the package)",
@@ -104,9 +120,9 @@
     },
     "c172-fg": {
       "kind": "model",
-      "url": "models/c172-fg.d22a0e58.glb",
-      "bytes": 4935468,
-      "sha256": "d22a0e5859f49bfaa2086a442e93c1a447a21c1fb6a4d3be848c5908fe2c565b",
+      "url": "models/c172-fg.559dec49.glb",
+      "bytes": 4934784,
+      "sha256": "559dec491c0f80e447d2eea327f91ac326065579cc58ff5b5bb5e9022d2dcc6d",
       "sourceSha256": "95e2e9d297e728dcb08a05bf353805b042b4491879db43f3d9c36e74949a0836",
       "license": "GPL-2.0-or-later",
       "author": "the c172p team (AUTHORS in the repo)",
@@ -118,9 +134,9 @@
     },
     "conc-fg": {
       "kind": "model",
-      "url": "models/conc-fg.3760a6be.glb",
-      "bytes": 567204,
-      "sha256": "3760a6beb6f947c78491665ff66fa0aa046c5110fbcb5b10669b31c8d4f92678",
+      "url": "models/conc-fg.bb625592.glb",
+      "bytes": 567400,
+      "sha256": "bb625592d73bf320b68c566856446820e442f6d956ba68e69b40ca543428ea1d",
       "sourceSha256": "16f530c0ed74c8de3dab615d72207940dbcbe61ff67c3c79396b3f4b5e2adf67",
       "license": "GPL-2.0-or-later",
       "author": "FlightGear Concorde authors (Models/ReadmeModel.txt)",
@@ -132,9 +148,9 @@
     },
     "f16-fg": {
       "kind": "model",
-      "url": "models/f16-fg.a34d2f2f.glb",
-      "bytes": 6029976,
-      "sha256": "a34d2f2f5fe1aac87c66644ba65d1df4e9fab0d5bf8f2cb2daf7ba7f45cda7bb",
+      "url": "models/f16-fg.eb55f5e4.glb",
+      "bytes": 6030880,
+      "sha256": "eb55f5e434f4d4614ff4f25e27221b04def24f06dd4a0be0cab6b3ea3d7f9ec3",
       "sourceSha256": "bf25abc1887739a75a53d148c1a04d2b8031ddb23b4a2e714c41a0e8d9cb650f",
       "license": "GPL-2.0-or-later",
       "author": "Nikolai V. Chr. and the f16 contributors (AUTHORS in the repo)",
@@ -146,9 +162,9 @@
     },
     "f35-fg": {
       "kind": "model",
-      "url": "models/f35-fg.08905a30.glb",
-      "bytes": 1804552,
-      "sha256": "08905a30864027d541f417f5c754a59e222ff89756bf6b806fe8ae2414de34a2",
+      "url": "models/f35-fg.3570d66c.glb",
+      "bytes": 1804700,
+      "sha256": "3570d66c490eb820618c1680983fc6e2c91ab7cca71050f593cf0bd530688dfc",
       "sourceSha256": "35d1e0e4f421cb0670e0412e5cb26561209792f9c9d7362907d3e992d9538da3",
       "license": "GPL-3.0-or-later",
       "author": "FlightGear F-35B authors (README in the repo)",
@@ -173,6 +189,16 @@
     {
       "id": "b738-fg",
       "title": "FlightGear 737-800 (cockpit.ac, flightdesk.ac, pedestal.ac, oh-panel.ac, pedals.ac; 737-800.ac, LWing/RWing/HorzStab/VertStab, nosegear, winglet)",
+      "author": "FlightGear 737-800 authors (README in the package)",
+      "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "license": "GPL-2.0-or-later",
+      "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
+      "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "1"
+    },
+    {
+      "id": "b738-fg-cockpit",
+      "title": "FlightGear 737-800 flight deck (cockpit.ac, flightdesk.ac, pedestal.ac, pedals.ac)",
       "author": "FlightGear 737-800 authors (README in the package)",
       "authorUrl": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/737-800/",
       "license": "GPL-2.0-or-later",
