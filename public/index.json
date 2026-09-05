@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "builtAt": "2026-09-05T04:49:58.090Z",
+  "builtAt": "2026-09-05T05:33:30.914Z",
   "origin": "https://axz-assets.vercel.app",
   "assets": {
     "uv-probe": {
@@ -14,9 +14,9 @@
     },
     "b738-fg": {
       "kind": "model",
-      "url": "models/b738-fg.9d1cb330.glb",
-      "bytes": 3934856,
-      "sha256": "9d1cb3306ca0defb9eacd479de41e3d4b7652a1d64cca63c68ab2699281e867c",
+      "url": "models/b738-fg.f9950d1f.glb",
+      "bytes": 425852,
+      "sha256": "f9950d1f8c123bcf54365b2ecb4ffb653630a91f198f0c95c0a901b4e604ea5a",
       "sourceSha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
       "license": "GPL-2.0-or-later",
       "author": "FlightGear 737-800 authors (README in the package)",
@@ -30,7 +30,7 @@
     },
     "draco-wrapper": {
       "kind": "decoder",
-      "url": "decoders/draco_wasm_wrapper.8bb2952d.js",
+      "url": "decoders/three-0.170.0/draco/draco_wasm_wrapper.js",
       "bytes": 58456,
       "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6",
       "license": "Apache-2.0",
@@ -39,7 +39,7 @@
     },
     "draco-wasm": {
       "kind": "decoder",
-      "url": "decoders/draco_decoder.a680d927.wasm",
+      "url": "decoders/three-0.170.0/draco/draco_decoder.wasm",
       "bytes": 192420,
       "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
       "license": "Apache-2.0",
@@ -48,7 +48,7 @@
     },
     "draco-js": {
       "kind": "decoder",
-      "url": "decoders/draco_decoder.8625489d.js",
+      "url": "decoders/three-0.170.0/draco/draco_decoder.js",
       "bytes": 512465,
       "sha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f",
       "license": "Apache-2.0",
@@ -57,7 +57,7 @@
     },
     "basis-js": {
       "kind": "decoder",
-      "url": "decoders/basis_transcoder.8478b5b6.js",
+      "url": "decoders/three-0.170.0/basis/basis_transcoder.js",
       "bytes": 57529,
       "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1",
       "license": "Apache-2.0",
@@ -66,7 +66,7 @@
     },
     "basis-wasm": {
       "kind": "decoder",
-      "url": "decoders/basis_transcoder.6cf17dc8.wasm",
+      "url": "decoders/three-0.170.0/basis/basis_transcoder.wasm",
       "bytes": 527333,
       "sha256": "6cf17dc889352c42e9acf8897107978d127005fe3386c36a0e3845e27967630a",
       "license": "Apache-2.0",
@@ -75,9 +75,9 @@
     },
     "a32x-fg": {
       "kind": "model",
-      "url": "models/a32x-fg.edb7c80d.glb",
-      "bytes": 12114112,
-      "sha256": "edb7c80d6ba7cd3c80a3851387122d1a9f713542887c564e3ba5b7b4f468c4b6",
+      "url": "models/a32x-fg.357e2cea.glb",
+      "bytes": 1388236,
+      "sha256": "357e2ceab4cd1a48e872eca3def70b8bda73ab0453211b149a1a1abe2006de78",
       "sourceSha256": "c8f31c685c4f16590550b364bc62beee6720027438b69efe7d5c99ffe7f2b590",
       "license": "GPL-2.0-or-later",
       "author": "legoboyvdlp, Octal450, merspieler and the A320-family contributors (AUTHORS in the repo)",
@@ -90,9 +90,9 @@
     },
     "b744-fg": {
       "kind": "model",
-      "url": "models/b744-fg.f51af6d9.glb",
-      "bytes": 12390040,
-      "sha256": "f51af6d9c58f23da89a22e1f436e020e927a2bb32094f3bbcfe0991c960d1c6f",
+      "url": "models/b744-fg.7fcc21be.glb",
+      "bytes": 1676512,
+      "sha256": "7fcc21bee48b3639ac26292bda5107410bdac208cfbc1eeda08e29d1bae20678",
       "sourceSha256": "da0eca0fb517ac939d167924c9d4b3f8750a6b7191932ef2cb145acfa624ac7e",
       "license": "GPL-2.0-or-later",
       "author": "FlightGear 747-400 authors (README in the package)",
@@ -104,9 +104,9 @@
     },
     "c172-fg": {
       "kind": "model",
-      "url": "models/c172-fg.e20c33a9.glb",
-      "bytes": 46727748,
-      "sha256": "e20c33a9ba2f6ee9c149cc90407738d43e65a0ef5d114ee96783a872a3b70647",
+      "url": "models/c172-fg.d22a0e58.glb",
+      "bytes": 4935468,
+      "sha256": "d22a0e5859f49bfaa2086a442e93c1a447a21c1fb6a4d3be848c5908fe2c565b",
       "sourceSha256": "95e2e9d297e728dcb08a05bf353805b042b4491879db43f3d9c36e74949a0836",
       "license": "GPL-2.0-or-later",
       "author": "the c172p team (AUTHORS in the repo)",
@@ -118,9 +118,9 @@
     },
     "conc-fg": {
       "kind": "model",
-      "url": "models/conc-fg.50978297.glb",
-      "bytes": 6378680,
-      "sha256": "5097829708ddb62db85838d2f0a16c9708b8d6bcd2ceb4e7f71b42bf524bf5ca",
+      "url": "models/conc-fg.3760a6be.glb",
+      "bytes": 567204,
+      "sha256": "3760a6beb6f947c78491665ff66fa0aa046c5110fbcb5b10669b31c8d4f92678",
       "sourceSha256": "16f530c0ed74c8de3dab615d72207940dbcbe61ff67c3c79396b3f4b5e2adf67",
       "license": "GPL-2.0-or-later",
       "author": "FlightGear Concorde authors (Models/ReadmeModel.txt)",
@@ -132,9 +132,9 @@
     },
     "f16-fg": {
       "kind": "model",
-      "url": "models/f16-fg.18ecb0f8.glb",
-      "bytes": 65102532,
-      "sha256": "18ecb0f88295b1edde1dc9f50ba18041b8b60f2b1426b3703f22caa94259051f",
+      "url": "models/f16-fg.a34d2f2f.glb",
+      "bytes": 6029976,
+      "sha256": "a34d2f2f5fe1aac87c66644ba65d1df4e9fab0d5bf8f2cb2daf7ba7f45cda7bb",
       "sourceSha256": "bf25abc1887739a75a53d148c1a04d2b8031ddb23b4a2e714c41a0e8d9cb650f",
       "license": "GPL-2.0-or-later",
       "author": "Nikolai V. Chr. and the f16 contributors (AUTHORS in the repo)",
@@ -146,9 +146,9 @@
     },
     "f35-fg": {
       "kind": "model",
-      "url": "models/f35-fg.7441f817.glb",
-      "bytes": 11063732,
-      "sha256": "7441f817df54889b3084120335a836d9f8f016fd4defec714266c62cc8afd56b",
+      "url": "models/f35-fg.08905a30.glb",
+      "bytes": 1804552,
+      "sha256": "08905a30864027d541f417f5c754a59e222ff89756bf6b806fe8ae2414de34a2",
       "sourceSha256": "35d1e0e4f421cb0670e0412e5cb26561209792f9c9d7362907d3e992d9538da3",
       "license": "GPL-3.0-or-later",
       "author": "FlightGear F-35B authors (README in the repo)",
