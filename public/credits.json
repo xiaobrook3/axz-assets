@@ -121,8 +121,7 @@
     "license": "GPL-2.0-or-later",
     "source": "https://github.com/legoboyvdlp/A320-family",
     "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-    "phase": "4",
-    "published": false
+    "phase": "4"
   },
   {
     "id": "b744-fg",
@@ -132,8 +131,7 @@
     "license": "GPL-2.0-or-later",
     "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/747-400/",
     "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-    "phase": "4",
-    "published": false
+    "phase": "4"
   },
   {
     "id": "c172-fg",
@@ -143,8 +141,7 @@
     "license": "GPL-2.0-or-later",
     "source": "https://github.com/c172p-team/c172p",
     "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-    "phase": "4",
-    "published": false
+    "phase": "4"
   },
   {
     "id": "conc-fg",
@@ -154,8 +151,7 @@
     "license": "GPL-2.0-or-later",
     "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/Concorde/",
     "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-    "phase": "4",
-    "published": false
+    "phase": "4"
   },
   {
     "id": "f16-fg",
@@ -165,8 +161,7 @@
     "license": "GPL-2.0-or-later",
     "source": "https://github.com/NikolaiVChr/f16",
     "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-    "phase": "4",
-    "published": false
+    "phase": "4"
   },
   {
     "id": "f35-fg",
@@ -176,7 +171,6 @@
     "license": "GPL-3.0-or-later",
     "source": "https://github.com/FGMEMBERS/F-35B",
     "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
-    "phase": "4",
-    "published": false
+    "phase": "4"
   }
 ]
