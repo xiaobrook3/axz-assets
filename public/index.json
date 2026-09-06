@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "builtAt": "2026-09-05T15:41:06.142Z",
+  "builtAt": "2026-09-06T00:10:39.612Z",
   "origin": "https://axz-assets.vercel.app",
   "assets": {
     "uv-probe": {
@@ -11,6 +11,38 @@
       "license": "authored",
       "author": "Brook Xiao",
       "source": "authored: axz-wab-source/scripts/assets/make-probe.mjs"
+    },
+    "b738-exterior": {
+      "kind": "model",
+      "url": "models/b738-exterior.283b80c0.glb",
+      "bytes": 920960,
+      "sha256": "283b80c01656e6a1d1397331bb9ecc585da037be6fce4852ca38e75b933322ca",
+      "sourceSha256": "535d21ce8c434414610685aee430c40571cfd55075c25e89799c8ec453de0140",
+      "license": "CC-BY-4.0",
+      "author": "hakai315",
+      "source": "https://sketchfab.com/3d-models/b737-800-model-6cbe380405794ea69d6b0a3d144dd1af",
+      "types": [
+        "b-737x",
+        "b-1717",
+        "b-0001f"
+      ],
+      "part": "exterior-alt"
+    },
+    "b738-exterior-alt": {
+      "kind": "model",
+      "url": "models/b738-exterior-alt.fdffb067.glb",
+      "bytes": 806808,
+      "sha256": "fdffb067e98ae8c3275b5e4fde0c2771d7498d85820f209fe685f641947c9621",
+      "sourceSha256": "9d16c82b074fab48e3b82146896635a4bfd8420d504ad3932738a0e487116c46",
+      "license": "CC-BY-4.0",
+      "author": "icr343",
+      "source": "https://sketchfab.com/3d-models/boeing-737-800-600a75a0b6b04517b31de66b27f0b110",
+      "types": [
+        "b-737x",
+        "b-1717",
+        "b-0001f"
+      ],
+      "part": "exterior-alt"
     },
     "b738-fg": {
       "kind": "model",
@@ -26,7 +58,7 @@
         "b-1717",
         "b-0001f"
       ],
-      "part": "exterior-fallback"
+      "part": "exterior"
     },
     "b738-fg-cockpit": {
       "kind": "model",
@@ -104,6 +136,34 @@
       ],
       "part": "exterior (A320) + cockpit (A320 and A321)"
     },
+    "a321-exterior": {
+      "kind": "model",
+      "url": "models/a321-exterior.30af0e45.glb",
+      "bytes": 575720,
+      "sha256": "30af0e455bc8aaf5235127ab9851a5679049913732e499adfcb7f1f155f3d6d7",
+      "sourceSha256": "8eb8bd88c0ccdfe0ad9f6e7a22978a13c156f68fc10ef4a9287fee0fa26e5f30",
+      "license": "CC-BY-4.0",
+      "author": "Otto Kirchhoff",
+      "source": "https://sketchfab.com/3d-models/a321ceo-sharklets-fedc658a3988480aa25f75831c285653",
+      "types": [
+        "b-321x"
+      ],
+      "part": "exterior"
+    },
+    "b744-exterior": {
+      "kind": "model",
+      "url": "models/b744-exterior.d7dd8d31.glb",
+      "bytes": 623520,
+      "sha256": "d7dd8d318d855d8bf5a791a4fe841c745f59cc393c2426ce12ccb142b2080974",
+      "sourceSha256": "385e91486e555d970f5c38b93dd5dd342bbb35b7100265906759864aee1f96bb",
+      "license": "CC-BY-4.0",
+      "author": "LDawesome",
+      "source": "https://sketchfab.com/3d-models/boeing-747-400-airplane-8c9c02b847344841adaa43c9ffe707a8",
+      "types": [
+        "b744"
+      ],
+      "part": "exterior-alt"
+    },
     "b744-fg": {
       "kind": "model",
       "url": "models/b744-fg.4a51652a.glb",
@@ -116,7 +176,21 @@
       "types": [
         "b744"
       ],
-      "part": "exterior-fallback+cockpit"
+      "part": "exterior+cockpit"
+    },
+    "b789-exterior": {
+      "kind": "model",
+      "url": "models/b789-exterior.83605a02.glb",
+      "bytes": 1471540,
+      "sha256": "83605a02065347f6f28c3cf5a7525cf5c61a9855e439c91c4b1b8f6f89bc0c2b",
+      "sourceSha256": "13255cbe4e149bcae58b91c1d81ed12b33e13e12015f74494827490aa0662b43",
+      "license": "CC-BY-4.0",
+      "author": "mudkipz321",
+      "source": "https://sketchfab.com/3d-models/boeing-787-9-singapore-airlines-d383b7e3b858407e8cff7365820cc4dd",
+      "types": [
+        "b789"
+      ],
+      "part": "exterior-alt"
     },
     "c172-fg": {
       "kind": "model",
@@ -146,6 +220,20 @@
       ],
       "part": "exterior+cockpit"
     },
+    "g650-exterior": {
+      "kind": "model",
+      "url": "models/g650-exterior.9f2e37c6.glb",
+      "bytes": 850372,
+      "sha256": "9f2e37c619958da5a26de48628f67cc5a16e8fa2cc0539a05d221b6281911a23",
+      "sourceSha256": "f9fb08aaa186e00c365e3034715de6c51ca694d3d87902f901e025e9ad5c3e44",
+      "license": "CC-BY-4.0",
+      "author": "Luca Martina",
+      "source": "https://sketchfab.com/3d-models/gulfstream-g650er-b88fa0194c2b49ef8560337ab96d7579",
+      "types": [
+        "g650"
+      ],
+      "part": "exterior"
+    },
     "f16-fg": {
       "kind": "model",
       "url": "models/f16-fg.eb55f5e4.glb",
@@ -159,6 +247,34 @@
         "f16"
       ],
       "part": "exterior+cockpit"
+    },
+    "f22-exterior": {
+      "kind": "model",
+      "url": "models/f22-exterior.2c82f83d.glb",
+      "bytes": 5754588,
+      "sha256": "2c82f83d68f86a9cf5313c90878b2b2a215780de8942d0ec7f6a01e02090be1f",
+      "sourceSha256": "1ea9d2723b1bd389867c886e2902cbecd96c1e29fddaa3afe8ef2f3346ab7fde",
+      "license": "CC-BY-4.0",
+      "author": "NLM",
+      "source": "https://sketchfab.com/3d-models/f22-raptor-free-2a64abf0866a405c865466c7642ca689",
+      "types": [
+        "f22"
+      ],
+      "part": "exterior-alt"
+    },
+    "f35-exterior": {
+      "kind": "model",
+      "url": "models/f35-exterior.d7d38284.glb",
+      "bytes": 615180,
+      "sha256": "d7d38284dcc40e14450944c6a91c388203486a6ac3e8301a01343c71b0fb3de3",
+      "sourceSha256": "8372350b07663566c466ccdae1bdf7eecfe26846a48f963b9538d495bb67215e",
+      "license": "CC-BY-4.0",
+      "author": "andertan",
+      "source": "https://sketchfab.com/3d-models/lockheed-martin-f35-lightning-ii-db911de503c74285a8d506951df786d6",
+      "types": [
+        "f35"
+      ],
+      "part": "exterior"
     },
     "f35-fg": {
       "kind": "model",
@@ -174,6 +290,34 @@
       ],
       "part": "cockpit"
     },
+    "b2-exterior": {
+      "kind": "model",
+      "url": "models/b2-exterior.44c3f37d.glb",
+      "bytes": 2537124,
+      "sha256": "44c3f37d4af67ed9a4a7ea17c1deea5442b1733f5db8770cfb640449c3aa3dfe",
+      "sourceSha256": "0208768294ab5dc9bdb69e611304add238842cbdc77e14568ff4355ce5dccde5",
+      "license": "CC-BY-4.0",
+      "author": "Immersive3D",
+      "source": "https://sketchfab.com/3d-models/pbr-b-2-spirit-b16592b1083948a49ae2afa90d190a08",
+      "types": [
+        "b2"
+      ],
+      "part": "exterior"
+    },
+    "b52-exterior": {
+      "kind": "model",
+      "url": "models/b52-exterior.f57cd92e.glb",
+      "bytes": 347340,
+      "sha256": "f57cd92ed14acf2ca361ac068dcfbf2a975c795bd5f56dfb0e830f28e2c39c0a",
+      "sourceSha256": "a4b9f105d3e5ba619e608837124fb1d15e2cb5747086ea3051253c23bea39782",
+      "license": "CC-BY-4.0",
+      "author": "bohmerang",
+      "source": "https://sketchfab.com/3d-models/boeing-b-52-stratofortress-38b0c64bd552431394efa8625d7f5144",
+      "types": [
+        "b52"
+      ],
+      "part": "exterior"
+    },
     "b789-fg": {
       "kind": "model",
       "url": "models/b789-fg.9ae742f3.glb",
@@ -186,7 +330,7 @@
       "types": [
         "b789"
       ],
-      "part": "exterior-fallback+cockpit"
+      "part": "exterior+cockpit"
     },
     "f22-fg": {
       "kind": "model",
@@ -200,7 +344,7 @@
       "types": [
         "f22"
       ],
-      "part": "exterior-fallback+cockpit"
+      "part": "exterior+cockpit"
     }
   },
   "credits": [
@@ -213,6 +357,26 @@
       "source": "authored: axz-wab-source/scripts/assets/make-probe.mjs",
       "modified": "",
       "phase": "0"
+    },
+    {
+      "id": "b738-exterior",
+      "title": "B737-800 Model",
+      "author": "hakai315",
+      "authorUrl": "https://sketchfab.com/hakai315",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/b737-800-model-6cbe380405794ea69d6b0a3d144dd1af",
+      "modified": "oriented, scaled to published length, Draco",
+      "phase": "1"
+    },
+    {
+      "id": "b738-exterior-alt",
+      "title": "Boeing 737-800",
+      "author": "icr343",
+      "authorUrl": "https://sketchfab.com/icr343",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/boeing-737-800-600a75a0b6b04517b31de66b27f0b110",
+      "modified": "oriented, scaled to published length, blue paint neutralised to white, Draco",
+      "phase": "1"
     },
     {
       "id": "b738-fg",
@@ -339,6 +503,26 @@
       "phase": "4"
     },
     {
+      "id": "a321-exterior",
+      "title": "A321ceo_sharklets",
+      "author": "Otto Kirchhoff",
+      "authorUrl": "https://sketchfab.com/Otto_Kirchhoff",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/a321ceo-sharklets-fedc658a3988480aa25f75831c285653",
+      "modified": "oriented, scaled to published length, Wizz Air paint neutralised to white (material colours), Draco",
+      "phase": "4"
+    },
+    {
+      "id": "b744-exterior",
+      "title": "Boeing 747-400 airplane",
+      "author": "LDawesome",
+      "authorUrl": "https://sketchfab.com/LDawesome",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/boeing-747-400-airplane-8c9c02b847344841adaa43c9ffe707a8",
+      "modified": "sky backdrop dropped, 33° plan yaw removed, oriented, scaled to published length, airline marks and titles painted out of the skin texture, Draco + WebP",
+      "phase": "4"
+    },
+    {
       "id": "b744-fg",
       "title": "FlightGear 747-400 (flight deck)",
       "author": "FlightGear 747-400 authors (README in the package)",
@@ -346,6 +530,16 @@
       "license": "GPL-2.0-or-later",
       "source": "https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/747-400/",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4"
+    },
+    {
+      "id": "b789-exterior",
+      "title": "Boeing 787-9 Singapore Airlines",
+      "author": "mudkipz321",
+      "authorUrl": "https://sketchfab.com/mudkipz321",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/boeing-787-9-singapore-airlines-d383b7e3b858407e8cff7365820cc4dd",
+      "modified": "oriented, scaled to published length, Singapore Airlines marks and titles painted out of three skin textures, Draco + WebP",
       "phase": "4"
     },
     {
@@ -369,6 +563,16 @@
       "phase": "4"
     },
     {
+      "id": "g650-exterior",
+      "title": "Gulfstream G650ER",
+      "author": "Luca Martina",
+      "authorUrl": "https://sketchfab.com/LucaMartina",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/gulfstream-g650er-b88fa0194c2b49ef8560337ab96d7579",
+      "modified": "oriented, scaled to published length, Draco",
+      "phase": "4"
+    },
+    {
       "id": "f16-fg",
       "title": "FlightGear F-16",
       "author": "Nikolai V. Chr. and the f16 contributors (AUTHORS in the repo)",
@@ -379,6 +583,26 @@
       "phase": "4"
     },
     {
+      "id": "f22-exterior",
+      "title": "F22 Raptor FREE",
+      "author": "NLM",
+      "authorUrl": "https://sketchfab.com/NLM-Group",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/f22-raptor-free-2a64abf0866a405c865466c7642ca689",
+      "modified": "one stray prop dropped, oriented, scaled to published length, Draco + WebP",
+      "phase": "4"
+    },
+    {
+      "id": "f35-exterior",
+      "title": "Lockheed Martin F35 Lightning II",
+      "author": "andertan",
+      "authorUrl": "https://sketchfab.com/andertan",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/lockheed-martin-f35-lightning-ii-db911de503c74285a8d506951df786d6",
+      "modified": "oriented, scaled to published length, translucent skin material made opaque, Draco + WebP",
+      "phase": "4"
+    },
+    {
       "id": "f35-fg",
       "title": "FlightGear F-35B (Cockpit.ac)",
       "author": "FlightGear F-35B authors (README in the repo)",
@@ -386,6 +610,26 @@
       "license": "GPL-3.0-or-later",
       "source": "https://github.com/FGMEMBERS/F-35B",
       "modified": "converted to glTF, textures re-authored, rigged from the FlightGear animation XML",
+      "phase": "4"
+    },
+    {
+      "id": "b2-exterior",
+      "title": "[PBR] B-2 Spirit",
+      "author": "Immersive3D",
+      "authorUrl": "https://sketchfab.com/Immersive3A",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/pbr-b-2-spirit-b16592b1083948a49ae2afa90d190a08",
+      "modified": "oriented, scaled to published length, Draco + WebP",
+      "phase": "4"
+    },
+    {
+      "id": "b52-exterior",
+      "title": "Boeing B-52 Stratofortress",
+      "author": "bohmerang",
+      "authorUrl": "https://sketchfab.com/bohmerang",
+      "license": "CC-BY-4.0",
+      "source": "https://sketchfab.com/3d-models/boeing-b-52-stratofortress-38b0c64bd552431394efa8625d7f5144",
+      "modified": "oriented, scaled to published length, Draco + WebP",
       "phase": "4"
     },
     {
@@ -409,16 +653,5 @@
       "phase": "4"
     }
   ],
-  "pending": [
-    "b738-exterior",
-    "b738-exterior-alt",
-    "a321-exterior",
-    "b744-exterior",
-    "b789-exterior",
-    "g650-exterior",
-    "f22-exterior",
-    "f35-exterior",
-    "b2-exterior",
-    "b52-exterior"
-  ]
+  "pending": []
 }

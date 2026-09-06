@@ -5,5 +5,6 @@ node_modules/
 .vercel/
 # converted outputs, regenerable from raw/ + axz-wab-source/scripts/assets
 derived/
-# written by the Vercel CLI on link; holds a token
-.env.local
+# written by the Vercel CLI on link; holds a token. The glob also catches a
+# mistyped copy, so a secret can never ride into a commit on its filename
+.env.local*

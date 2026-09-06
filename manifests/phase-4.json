@@ -56,21 +56,38 @@
       "author": "Otto Kirchhoff",
       "authorUrl": "https://sketchfab.com/Otto_Kirchhoff",
       "title": "A321ceo_sharklets",
-      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "format": "glTF zip from Sketchfab → GLB in the FlightGear frame, Draco",
       "sourceBytes": 1776436,
       "faces": 92657,
       "textures": 0,
       "published": "2026-02-02",
       "evidence": "48 materials; the description's MSN/hours read like an engineer's own model",
       "concerns": "untextured (authored skin); 24 downloads",
-      "modified": "repainted to the AXZ livery with authored PBR textures, rigged, Draco",
+      "modified": "oriented, scaled to published length, Wizz Air paint neutralised to white (material colours), Draco",
       "note": "promoted from the fleet proposal's fallback on 2026-09-04: the FlightGear A320-family package carries no A321 fuselage (A320-216.ac only). The A321 shares the A320 flight deck in reality, so a32x-fg supplies the cockpit.",
-      "fetched": false,
+      "fetched": true,
       "fetch": {
         "type": "sketchfab",
         "uid": "fedc658a3988480aa25f75831c285653",
         "expect": "models/a321-exterior/source.zip",
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
+      },
+      "fetchedOn": "2026-09-05",
+      "bytes": 1776436,
+      "files": 1,
+      "sha256": "8eb8bd88c0ccdfe0ad9f6e7a22978a13c156f68fc10ef4a9287fee0fa26e5f30",
+      "import": {
+        "len": 44.51,
+        "span": 35.8,
+        "note": "published length and span in metres; exclude = source node names that are scenery or stray props",
+        "neutralise": {
+          "materials": true,
+          "fill": [
+            1,
+            1,
+            1
+          ]
+        }
       }
     },
     {
@@ -78,7 +95,7 @@
       "types": [
         "b744"
       ],
-      "part": "exterior",
+      "part": "exterior-alt",
       "kind": "model",
       "file": "models/b744-exterior/b744-exterior.glb",
       "derived": true,
@@ -87,29 +104,42 @@
       "author": "LDawesome",
       "authorUrl": "https://sketchfab.com/LDawesome",
       "title": "Boeing 747-400 airplane",
-      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "format": "glTF zip from Sketchfab → GLB in the FlightGear frame, Draco + WebP",
       "sourceBytes": 4988979,
       "faces": 295170,
       "textures": "2 at 4096",
       "published": "2023-10-05",
       "evidence": "'noai' tag, 5 materials, blank finish",
       "concerns": "127 downloads; two textures for a 747 means most detail is geometry",
-      "modified": "repainted, rigged, Draco, KTX2",
-      "fetched": false,
+      "modified": "sky backdrop dropped, 33° plan yaw removed, oriented, scaled to published length, airline marks and titles painted out of the skin texture, Draco + WebP",
+      "fetched": true,
       "fetch": {
         "type": "sketchfab",
         "uid": "8c9c02b847344841adaa43c9ffe707a8",
         "expect": "models/b744-exterior/source.zip",
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
-      "note": "PRIMARY exterior"
+      "note": "showroom; flies once rigged",
+      "fetchedOn": "2026-09-05",
+      "bytes": 4988979,
+      "files": 1,
+      "sha256": "385e91486e555d970f5c38b93dd5dd342bbb35b7100265906759864aee1f96bb",
+      "import": {
+        "len": 70.66,
+        "span": 64.44,
+        "note": "published length and span in metres; exclude = source node names that are scenery or stray props",
+        "neutralise": {
+          "textures": true,
+          "dark": 120
+        }
+      }
     },
     {
       "id": "b744-fg",
       "types": [
         "b744"
       ],
-      "part": "exterior-fallback+cockpit",
+      "part": "exterior+cockpit",
       "kind": "model",
       "file": "models/b744-fg/b744-fg.glb",
       "derived": true,
@@ -143,14 +173,14 @@
       "bytes": 15227258,
       "files": 103,
       "sha256": "da0eca0fb517ac939d167924c9d4b3f8750a6b7191932ef2cb145acfa624ac7e",
-      "note": "the FlightGear exterior flies as the fallback until the LDawesome zip arrives; the flight deck is the primary cockpit"
+      "note": "flown: FlightGear rig until the LDawesome airframe has one"
     },
     {
       "id": "b789-exterior",
       "types": [
         "b789"
       ],
-      "part": "exterior",
+      "part": "exterior-alt",
       "kind": "model",
       "file": "models/b789-exterior/b789-exterior.glb",
       "derived": true,
@@ -159,22 +189,35 @@
       "author": "mudkipz321",
       "authorUrl": "https://sketchfab.com/mudkipz321",
       "title": "Boeing 787-9 Singapore Airlines",
-      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "format": "glTF zip from Sketchfab → GLB in the FlightGear frame, Draco + WebP",
       "sourceBytes": 7812737,
       "faces": 444420,
       "textures": "10 at 4096",
       "published": "2021-03-12",
       "evidence": "'Designed in blender, created for a friend'; 6,057 downloads, 158 likes; re-uploaded by three other accounts, which marks this as the original",
       "concerns": "Singapore Airlines livery: the livery texture is replaced, never shipped",
-      "modified": "repainted to AXZ, rigged, Draco, KTX2",
-      "fetched": false,
+      "modified": "oriented, scaled to published length, Singapore Airlines marks and titles painted out of three skin textures, Draco + WebP",
+      "fetched": true,
       "fetch": {
         "type": "sketchfab",
         "uid": "d383b7e3b858407e8cff7365820cc4dd",
         "expect": "models/b789-exterior/source.zip",
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
-      "note": "PRIMARY; cockpit authored (yoke-glass family)"
+      "note": "showroom; flies once rigged. Cockpit authored (yoke-glass family)",
+      "fetchedOn": "2026-09-05",
+      "bytes": 7812737,
+      "files": 1,
+      "sha256": "13255cbe4e149bcae58b91c1d81ed12b33e13e12015f74494827490aa0662b43",
+      "import": {
+        "len": 62.81,
+        "span": 60.12,
+        "note": "published length and span in metres; exclude = source node names that are scenery or stray props",
+        "neutralise": {
+          "textures": true,
+          "dark": 120
+        }
+      }
     },
     {
       "id": "c172-fg",
@@ -268,22 +311,31 @@
       "author": "Luca Martina",
       "authorUrl": "https://sketchfab.com/LucaMartina",
       "title": "Gulfstream G650ER",
-      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "format": "glTF zip from Sketchfab → GLB in the FlightGear frame, Draco",
       "sourceBytes": 5173215,
       "faces": 379286,
       "textures": 0,
       "published": "2025-04-25",
       "evidence": "1,039 downloads, 26 likes; the only real G650 on any free source",
       "concerns": "untextured: skin authored",
-      "modified": "skin authored, rigged, Draco",
-      "fetched": false,
+      "modified": "oriented, scaled to published length, Draco",
+      "fetched": true,
       "fetch": {
         "type": "sketchfab",
         "uid": "b88fa0194c2b49ef8560337ab96d7579",
         "expect": "models/g650-exterior/source.zip",
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
-      "note": "PRIMARY; cockpit authored (yoke-glass family)"
+      "note": "PRIMARY; cockpit authored (yoke-glass family)",
+      "fetchedOn": "2026-09-05",
+      "bytes": 5173215,
+      "files": 1,
+      "sha256": "f9fb08aaa186e00c365e3034715de6c51ca694d3d87902f901e025e9ad5c3e44",
+      "import": {
+        "len": 30.41,
+        "span": 30.36,
+        "note": "published length and span in metres; exclude = source node names that are scenery or stray props"
+      }
     },
     {
       "id": "f16-fg",
@@ -327,7 +379,7 @@
       "types": [
         "f22"
       ],
-      "part": "exterior",
+      "part": "exterior-alt",
       "kind": "model",
       "file": "models/f22-exterior/f22-exterior.glb",
       "derived": true,
@@ -336,22 +388,34 @@
       "author": "NLM",
       "authorUrl": "https://sketchfab.com/NLM-Group",
       "title": "F22 Raptor FREE",
-      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "format": "glTF zip from Sketchfab → GLB in the FlightGear frame, Draco + WebP",
       "sourceBytes": 61473182,
       "faces": 86638,
       "textures": "89 at 2048",
       "published": "2022-08-05",
       "evidence": "'animated, textured, game-ready'; 2,474 downloads, 178 likes; same studio as the C172SP",
       "concerns": "61 MB raw → consolidated and KTX2 to ≈ 8 MB",
-      "modified": "rigged, textures consolidated",
-      "fetched": false,
+      "modified": "one stray prop dropped, oriented, scaled to published length, Draco + WebP",
+      "fetched": true,
       "fetch": {
         "type": "sketchfab",
         "uid": "2a64abf0866a405c865466c7642ca689",
         "expect": "models/f22-exterior/source.zip",
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
-      "note": "PRIMARY; cockpit authored (fighter family)"
+      "note": "showroom; flies once rigged. Cockpit authored (fighter family)",
+      "fetchedOn": "2026-09-05",
+      "bytes": 61473182,
+      "files": 1,
+      "sha256": "1ea9d2723b1bd389867c886e2902cbecd96c1e29fddaa3afe8ef2f3346ab7fde",
+      "import": {
+        "len": 18.92,
+        "span": 13.56,
+        "exclude": [
+          "Object_89"
+        ],
+        "note": "published length and span in metres; exclude = source node names that are scenery or stray props"
+      }
     },
     {
       "id": "f35-exterior",
@@ -367,22 +431,36 @@
       "author": "andertan",
       "authorUrl": "https://sketchfab.com/andertan",
       "title": "Lockheed Martin F35 Lightning II",
-      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "format": "glTF zip from Sketchfab → GLB in the FlightGear frame, Draco + WebP",
       "sourceBytes": 3742999,
       "faces": 83174,
       "textures": "6 at 4096",
       "published": "2024-07-18",
       "evidence": "2,702 downloads, 119 likes; a consistent author of F-16/F-22/F-35",
       "concerns": "none beyond unstated provenance",
-      "modified": "rigged",
-      "fetched": false,
+      "modified": "oriented, scaled to published length, translucent skin material made opaque, Draco + WebP",
+      "fetched": true,
       "fetch": {
         "type": "sketchfab",
         "uid": "db911de503c74285a8d506951df786d6",
         "expect": "models/f35-exterior/source.zip",
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
-      "note": "PRIMARY exterior"
+      "note": "flown without a rig: FlightGear has only an F-35B, kept for its cockpit",
+      "fetchedOn": "2026-09-05",
+      "bytes": 3742999,
+      "files": 1,
+      "sha256": "8372350b07663566c466ccdae1bdf7eecfe26846a48f963b9538d495bb67215e",
+      "import": {
+        "len": 15.67,
+        "span": 10.7,
+        "note": "published length and span in metres; exclude = source node names that are scenery or stray props",
+        "neutralise": {
+          "opaque": [
+            "Whitish_grey"
+          ]
+        }
+      }
     },
     {
       "id": "f35-fg",
@@ -434,22 +512,31 @@
       "author": "Immersive3D",
       "authorUrl": "https://sketchfab.com/Immersive3A",
       "title": "[PBR] B-2 Spirit",
-      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "format": "glTF zip from Sketchfab → GLB in the FlightGear frame, Draco + WebP",
       "sourceBytes": 69253270,
       "faces": 26157,
       "textures": "8 PBR at 4096",
       "published": "2024-02-05",
       "evidence": "a studio account; PBR set; 85 likes",
       "concerns": "69 MB raw → KTX2 ≈ 6 MB",
-      "modified": "rigged, textures re-encoded",
-      "fetched": false,
+      "modified": "oriented, scaled to published length, Draco + WebP",
+      "fetched": true,
       "fetch": {
         "type": "sketchfab",
         "uid": "b16592b1083948a49ae2afa90d190a08",
         "expect": "models/b2-exterior/source.zip",
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
-      "note": "PRIMARY; cockpit authored"
+      "note": "PRIMARY; cockpit authored",
+      "fetchedOn": "2026-09-05",
+      "bytes": 69253270,
+      "files": 1,
+      "sha256": "0208768294ab5dc9bdb69e611304add238842cbdc77e14568ff4355ce5dccde5",
+      "import": {
+        "len": 21.03,
+        "span": 52.43,
+        "note": "published length and span in metres; exclude = source node names that are scenery or stray props"
+      }
     },
     {
       "id": "b52-exterior",
@@ -465,29 +552,38 @@
       "author": "bohmerang",
       "authorUrl": "https://sketchfab.com/bohmerang",
       "title": "Boeing B-52 Stratofortress",
-      "format": "glTF zip from Sketchfab → converted, rigged, Draco + KTX2",
+      "format": "glTF zip from Sketchfab → GLB in the FlightGear frame, Draco + WebP",
       "sourceBytes": 2393921,
       "faces": 16616,
       "textures": "20 at 1024",
       "published": "2023-09-12",
       "evidence": "a known author of free military aircraft; 4,414 downloads, 259 likes",
       "concerns": "1024 textures re-authored",
-      "modified": "rigged, textures re-authored",
-      "fetched": false,
+      "modified": "oriented, scaled to published length, Draco + WebP",
+      "fetched": true,
       "fetch": {
         "type": "sketchfab",
         "uid": "38b0c64bd552431394efa8625d7f5144",
         "expect": "models/b52-exterior/source.zip",
         "instructions": "Sketchfab needs a logged-in account: either download the glTF zip in the browser to raw/<expect>, or put SKETCHFAB_TOKEN=<your personal API token> in axz-assets/.env.local and rerun the fetch"
       },
-      "note": "PRIMARY; cockpit authored"
+      "note": "PRIMARY; cockpit authored",
+      "fetchedOn": "2026-09-05",
+      "bytes": 2393921,
+      "files": 1,
+      "sha256": "a4b9f105d3e5ba619e608837124fb1d15e2cb5747086ea3051253c23bea39782",
+      "import": {
+        "len": 48.5,
+        "span": 56.39,
+        "note": "published length and span in metres; exclude = source node names that are scenery or stray props"
+      }
     },
     {
       "id": "b789-fg",
       "types": [
         "b789"
       ],
-      "part": "exterior-fallback+cockpit",
+      "part": "exterior+cockpit",
       "kind": "model",
       "file": "models/b789-fg/b789-fg.glb",
       "derived": true,
@@ -517,14 +613,15 @@
       "bytes": 357986049,
       "files": 449,
       "sha256": "065fd9609249ae976a30e4f03cede8c1b863724c69c596f4330831853d2679c8",
-      "commit": "7275231fdee4d0d549cfc2b05ac6b377ceea3f32"
+      "commit": "7275231fdee4d0d549cfc2b05ac6b377ceea3f32",
+      "note": "flown: FlightGear rig until the mudkipz321 airframe has one"
     },
     {
       "id": "f22-fg",
       "types": [
         "f22"
       ],
-      "part": "exterior-fallback+cockpit",
+      "part": "exterior+cockpit",
       "kind": "model",
       "file": "models/f22-fg/f22-fg.glb",
       "derived": true,
@@ -554,7 +651,8 @@
       "bytes": 26859242,
       "files": 258,
       "sha256": "56a6bb8d7e7e377573cecc2d9e5d57865662d3a14eb2629474570cc404053efc",
-      "commit": "da046fba441d9fb513b981905bcee80fd61e6706"
+      "commit": "da046fba441d9fb513b981905bcee80fd61e6706",
+      "note": "flown: FlightGear rig until the NLM airframe has one"
     }
   ]
 }
